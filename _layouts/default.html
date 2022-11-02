@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
@@ -25,7 +26,7 @@
           <div class="col-md-2 hidden-xs hidden-sm">
             <a href="/"><img width="100%" style="padding-top: 3mm;height: 10;" src="{{ site.baseurl }}/images/share.png""/></a>
             <nav>
-              <strong>LATEST</strong>
+              <strong>TOTAL VISITED: <span id="visits"></span></strong>
               {% for post in site.posts %}
               <li><a style="text-align: left; color: #074B80"  href="{{post.url}}">{{post.title}}</a></li>
               {% endfor %}
@@ -69,18 +70,45 @@
           </div>
         </div>
       </div>
+
     <!-- </div> -->
 
     
-
-    <div class="wrapper-footer">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
         </footer>
       </div>
-    </div>
+    </div> -->
+    <footer style="margin-top: 10rem"></footer>
+
 
     {% include analytics.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Config MathJax  -->
+    <script>
+      window.MathJax = {
+        tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        skipHtmlTags: [
+          'script', 'noscript', 'style', 'textarea', 'pre'
+        ],
+      };
+    </script>
+	<script type="text/javascript" id="MathJax-script" async
+	  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+	</script>
+      {% if page.layout == 'post' %}
+      <script src="{{ site.baseurl }}/js/outline.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function() {
+        $('#outline').toc();
+      });
+      </script>
+      {% endif %}
   </body>
 </html>

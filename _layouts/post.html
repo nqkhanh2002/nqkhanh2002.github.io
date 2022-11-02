@@ -1,10 +1,11 @@
 ---
 layout: default
 ---
+<script async src = " https://api.countapi.xyz/hit/nqkhanh2002.github.io/8c033c13-781e-4759-9119-16add4ceb46f?callback=websiteVisits "> </script>
 
 <article class="post">
   
-  <h1>{{ page.title }} - Visited: <span id="visits"></span></h1>
+  <h1>{{ page.title }}</h1>
   <div style="display: flex;justify-content: space-between;align-items: center;">
     <div class="date">
       <strong>Written on {{ page.date | date: "%B %e, %Y" }} - {{page.author}}</strong> 
@@ -21,7 +22,7 @@ layout: default
       {% endfor %}
     </div>
   </div>
-  
+  <div id="outline"></div>
   <div class="entry">
     {{ content }}
   </div>
@@ -29,4 +30,5 @@ layout: default
   
 
   {% include disqus.html %}
+  <script src="{{ site.baseurl }}/js/script.js"></script>
 </article>
