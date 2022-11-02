@@ -9,33 +9,69 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+  
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+    <!-- <div class="wrapper-masthead"> -->
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left -->
+          <div class="col-md-2 hidden-xs hidden-sm">
+            <a href="/"><img width="100%" style="padding-top: 3mm;height: 10;" src="{{ site.baseurl }}/images/share.png""/></a>
+            <nav>
+              <strong>LATEST</strong>
+              {% for post in site.posts %}
+              <li><a style="text-align: left; color: #074B80"  href="{{post.url}}">{{post.title}}</a></li>
+              {% endfor %}
+            </nav>
           </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog AI</a>
-            <a href="https://nqkhanh2002.github.io/portfolio/" target="_blank">Portfolio</a>
-          </nav>
-        </header>
+          <!-- center -->
+          <div class="col-md-8 col-xs-12 " style="z-index:1" >
+            
+            <header class="masthead clearfix ">
+              <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+    
+              <div class="site-info">
+                <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1><br>
+                <p class="site-description">{{ site.description }}</p>
+              </div>
+    
+              <nav>
+                <a href="{{ site.baseurl }}/Categories/">Categories</a>
+                <a href="{{ site.baseurl }}/">Machine Learning</a>
+                <a href="{{ site.baseurl }}/">Computer Vision</a>
+                <a href="{{ site.baseurl }}/">Deep Learning</a>
+                <a href="{{ site.baseurl }}/">NLP</a>
+                <a href="https://nqkhanh2002.github.io/portfolio/" target="_blank">About</a>
+              </nav>
+            </header>
+            <div id="bootstrap-overrides" role="main">
+              {{ content }}
+            </div>
+          </div>
+          <!-- right -->
+          <div class="col-md-2 hidden-xs hidden-sm">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUIT.Fanpage&tabs=events&width=250&height=100&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="250" height="100" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>              
+            <strong>SHARE REFERENCES</strong>
+              <li><a style="text-align: left; color: #074B80"  href="http://web.stanford.edu/class/cs109/">Xác suất thống kê(Probability): CS109</a></li>
+              <li><a style="text-align: left; color: #074B80"  href="http://web.stanford.edu/class/cs246/">Bigdata: CS246</a></li>
+              <li><a style="text-align: left; color: #074B80"  href="http://cs231n.stanford.edu/">Computer vision cơ bản: CS231N</a></li>
+              <li><a style="text-align: left; color: #074B80"  href="http://web.stanford.edu/class/cs224n/">Natural Language Processing: CS224N</a></li>
+              <li><a style="text-align: left; color: #074B80"  href="http://web.stanford.edu/class/cs224w/">Khoá phân tích mạng lưới (analysis of network): CS224W</a></li>
+              <li><a style="text-align: left; color: #074B80"  href="https://web.stanford.edu/class/cs20si/">Khóa học Tensorflow: CS20SI</a></li>
+            </nav>
+          </div>
+        </div>
       </div>
-    </div>
+    <!-- </div> -->
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+    
 
     <div class="wrapper-footer">
       <div class="container">

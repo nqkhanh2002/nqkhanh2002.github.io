@@ -1,8 +1,11 @@
 ---
 layout: post
-title: Giới thiệu về Trí tuệ nhân tạo (AI)
+title: Bài 1 - Giới thiệu về Trí tuệ nhân tạo (AI)
+categories : Introduction
+author: Nguyen Quoc Khanh
 ---
-# Bài 1: Giới thiệu về Machine Learning
+
+<br>
 
 Những năm gần đây, AI - Artificial Intelligence (Trí Tuệ Nhân Tạo), và cụ thể hơn là Machine Learning (Học Máy hoặc Máy Học) nổi lên như một bằng chứng của cuộc cách mạng công nghiệp lần thứ tư (1 - động cơ hơi nước, 2 - năng lượng điện, 3 - công nghệ thông tin). Trí Tuệ Nhân Tạo đang len lỏi vào mọi lĩnh vực trong đời sống mà có thể chúng ta không nhận ra. Xe tự hành của Google và Tesla, hệ thống tự tag khuôn mặt trong ảnh của Facebook, trợ lý ảo Siri của Apple, hệ thống gợi ý sản phẩm của Amazon, hệ thống gợi ý phim của Netflix, máy chơi cờ vây AlphaGo của Google DeepMind, …, chỉ là một vài trong vô vàn những ứng dụng của AI/Machine Learning. (Xem thêm Jarvis - trợ lý thông minh cho căn nhà của Mark Zuckerberg)
 

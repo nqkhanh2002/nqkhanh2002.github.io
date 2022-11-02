@@ -3,15 +3,30 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
-
+  
+  <h1>{{ page.title }} - Visited: <span id="visits"></span></h1>
+  <div style="display: flex;justify-content: space-between;align-items: center;">
+    <div class="date">
+      <strong>Written on {{ page.date | date: "%B %e, %Y" }} - {{page.author}}</strong> 
+    </div>
+    <div class="post-categories">
+      {% if post %}
+        {% assign categories = post.categories %}
+      {% else %}
+        {% assign categories = page.categories %}
+      {% endif %}
+      {% for category in categories %}
+      <a href="{{site.baseurl}}/categories/#{{category|slugize}}">Categories: {{category}}</a>
+      {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+  
   <div class="entry">
     {{ content }}
   </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+  
 
   {% include disqus.html %}
 </article>
