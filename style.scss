@@ -236,6 +236,10 @@ nav {
       color: $blue;
     }
   }
+  ol li {
+    display: inline-block;
+    font-weight: bold;
+  }
 }
 
 //
