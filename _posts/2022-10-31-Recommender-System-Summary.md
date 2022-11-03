@@ -94,6 +94,7 @@ Netflix là một ví dụ điển hình về việc sử dụng hệ thống gi
     <li>Các thuật toán CF truyền thống thường gặp phải các vấn đề nghiêm trọng về khả năng mở rộng. Khi số lượng người dùng tăng lên và lượng dữ liệu mở rộng, các thuật toán cộng tác sẽ bắt đầu bị giảm hiệu suất do sự gia tăng tuyệt đối về khối lượng dữ liệu.</li>
 </ul>
 
+**Bản PDF Latex các bạn có thể xem và tải về** [tại đây](https://www.overleaf.com/read/mpfrxbrrqrmb). 
 
 # 5. References
 
