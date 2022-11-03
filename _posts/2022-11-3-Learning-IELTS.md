@@ -7,19 +7,19 @@ author: Nguyen Quoc Khanh
 
 <br>
 
-{% include image.html url="/images/paper/ielts.jpg" description="" %}
+{% include image.html url="/images/ielts/ielts.jpg" description="" %}
 
 Bài viết này chỉ là kinh nghiệm cá nhân tổng hợp của mình từ việc học **IELTS** và làm bài thi **IELTS**. Mình không phải là chuyên gia về **IELTS**, nên nếu có sai sót mong mọi người thông cảm.
 
-# 1. Tổng quan về **IELTS**
-## 1.1. **IELTS** là gì?
+# 1. Tổng quan về IELTS
+## 1.1. IELTS là gì?
 
 **IELTS** viết tắt cho International English Language Testing System, tạm dịch là Hệ thống 
 Kiểm tra Anh ngữ Quốc tế với 4 kỹ năng Nghe, Nói, Đọc và Viết. **IELTS** là cuộc thi kiểm tra
 trình độ thông thạo Anh ngữ quan trọng và phổ biến nhất thế giới cho mục đích học tập,
 làm việc và định cư với hơn hai triệu thí sinh dự thi.
 
-## 1.2. Cấu trúc đề thi **IELTS**
+## 1.2. Cấu trúc đề thi IELTS
 
 **IELTS** có 2 phiên bản thi: **IELTS** Academic và **IELTS** General Training. Đề thi **IELTS** Academic
 thường được dùng cho mục đích học tập, còn đề thi **IELTS** General Training thường được dùng cho mục đích làm việc và định cư.

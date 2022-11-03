@@ -177,5 +177,5 @@ Trên đây là những kinh nghiệm mà mình đúc kết được trong quá 
 # 2. Viết Paper
 # 3. Public Paper
 # 4. References
-1. [https://machinelearningcoban.com/2017/08/05/phdlife/#-cac-tieu-chi-danh-**gia**](https://machinelearningcoban.com/2017/08/05/phdlife/#-cac-tieu-chi-danh-gia)
+1. [https://machinelearningcoban.com/2017/08/05/phdlife/#-cac-tieu-chi-danh-gia](https://machinelearningcoban.com/2017/08/05/phdlife/#-cac-tieu-chi-danh-gia)
 2. [https://viblo.asia/p/mot-so-luu-y-khi-doc-research-paper-cho-nguoi-moi-naQZR910Kvx](https://viblo.asia/p/mot-so-luu-y-khi-doc-research-paper-cho-nguoi-moi-naQZR910Kvx)
