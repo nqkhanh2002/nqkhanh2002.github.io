@@ -130,5 +130,7 @@ format đề listening của IELTS.
 ## 2.3. GIAI ĐOẠN 3: TĂNG TỐC
 ## 2.4. GIAI ĐOẠN 3: VỀ ĐÍCH
 # 3. Phân bổ thời gian học IELTS theo từng kỹ năng
+# 4. Hướng dẫn sử dụng sách
+## 4.1 Grammar for IELTS
 # 4. Tổng hợp tất cả tài liệu IELTS
 Đây là nguồn tổng hợp tất cả tài liệu **IELTS** mình biết. Các bạn có thể lựa chọn tài liệu phù hợp với trình độ của mình để ôn luyện nhé.
