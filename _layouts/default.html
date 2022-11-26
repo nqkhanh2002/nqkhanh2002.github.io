@@ -9,6 +9,7 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="https://kit.fontawesome.com/33ae36df60.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
@@ -86,7 +87,7 @@
         </footer>
       </div>
     </div> -->
-    <footer style="margin-top: 10rem"></footer>
+ 
 
 
     {% include analytics.html %}
@@ -114,5 +115,61 @@
       });
       </script>
       {% endif %}
+      <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"> </i></a>
+      <footer class="site-footer col-md-">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify"">My blog is just a small part of sharing my knowledge with the community and also a part to help me revise my knowledge in my journey. This is a blog about Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, and other related fields.
+                 Thank you for reading this far and I hope you will find it useful.
+              </p>
+            </div>
+    
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                <li><a href="{{ site.baseurl }}">Computer Vision</a></li>
+                <li><a href="{{ site.baseurl }}">Machine Learning</a></li>
+                <li><a href="{{ site.baseurl }}">Deep Learning</a></li>
+                <li><a href="{{ site.baseurl }}">NLP</a></li>
+                <li><a href="{{ site.baseurl }}">Paper</a></li>
+                <li><a href="{{ site.baseurl }}">English</a></li>
+              </ul>
+            </div>
+    
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="{{ site.baseurl }}">About Us</a></li>
+                <li><a href="{{ site.baseurl }}">Contact Us</a></li>
+                <li><a href="{{ site.baseurl }}">Contribute</a></li>
+                <li><a href="{{ site.baseurl }}">Privacy Policy</a></li>
+                <li><a href="https://i.am.ai/roadmap">AI Expert Roadmap</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2022. All Rights Reserved by 
+           <a href="#" style="color: red;">NQK | DEV</a>.
+              </p>
+            </div>
+    
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
   </body>
+  
 </html>

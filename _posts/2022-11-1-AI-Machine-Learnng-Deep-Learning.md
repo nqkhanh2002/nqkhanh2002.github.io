@@ -6,7 +6,7 @@ author: Nguyen Quoc Khanh
 ---
 
 <br>
-<!-- {% include image.html url="\images\ielts\basicielts.png" description="" %} -->
+
 
 # 1. AI, Machine Learning và Deep Learning
 
