@@ -459,20 +459,21 @@ footer {
     font-weight:600
   }
 }
-.btn-top {
-  text-align: center;
-}
+// .btn-top {
+//     text-align: center;
+
+// }
 .gotopbtn {
   position: fixed;
-  bottom: 40px;
+  bottom: 5px;
   // left: 50px;
   // align-items: center;
-  // right: 50%;
+  right: 10px;
   background: #000;
   z-index: 99;
   border: none;
   outline: none;
-  border-radius: 5px;
+  // border-radius: 5px;
   /*z-index: 99;
   font-size: 18px;
   border: none;
@@ -501,12 +502,12 @@ footer {
 }
 .gotopbtn:after {
     content: "";
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px !important;
-    margin-top: -120%;
+    // display: block;
+    // position: absolute;
+    // padding-top: 300%;
+    // padding-left: 350%;
+    // // margin-left: -20px !important;
+    // margin-top: -120%;
     opacity: 0;
     transition: all 0.8s;
     color: white;
