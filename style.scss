@@ -459,13 +459,15 @@ footer {
     font-weight:600
   }
 }
-
+.btn-top {
+  text-align: center;
+}
 .gotopbtn {
   position: fixed;
   bottom: 40px;
   // left: 50px;
   // align-items: center;
-  right: 50%;
+  // right: 50%;
   background: #000;
   z-index: 99;
   border: none;
