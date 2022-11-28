@@ -21,7 +21,8 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font-size: 18px;
+  font-family:Roboto;
   color: $darkGray;
 }
 
@@ -33,7 +34,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: Roboto;
   color: $darkerGray;
   font-weight: bold;
 
@@ -118,7 +119,7 @@ img {
 }
 
 .date {
-  font-style: italic;
+  font-style: Roboto;
   color: $gray;
 }
 
@@ -196,7 +197,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: Roboto;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -215,14 +216,14 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: Roboto;
   font-size: 18px;
 
   @include mobile {
     float: none;
     margin-top: 9px;
     display: block;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   a {
@@ -264,7 +265,7 @@ nav {
     padding: 0.1em 1em;
     color: $gray;
     font-size: 22px;
-    font-style: italic;
+    font-style: Roboto;
   }
 
   .comments {
@@ -405,7 +406,7 @@ footer {
   text-transform:uppercase;
   color:#96a2b2;
   font-weight:700;
-  font-size:13px
+  font-size:13px;
 }
 .social-icons a{
   background-color:#eceeef;
@@ -518,4 +519,12 @@ footer {
     opacity: 0;
     transition: 0s;
     color: white;
+}
+.entry {
+  font-family: Roboto;
+  font-size: 22px;
+}
+#outline {
+  font-family: Roboto;
+  font-size: 18px;
 }
