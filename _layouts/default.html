@@ -28,9 +28,11 @@
           <div class="col-md-2 hidden-xs hidden-sm">
             <a href="/"><img width="100%" style="padding-top: 3mm;padding-left: 3mm;height: 10;" src="{{ site.baseurl }}/images/intro.jpg""/></a>
             <nav>
-              <strong  style="text-align: center;">TOTAL VISITED: <span id="visits"></span></strong>
+              <div style="text-align: center;color: red;">
+                <strong  style="text-align: center;">TOTAL VISITED -  <span id="visits"></span></strong>
+              </div>
               {% for post in site.posts %}
-              <li><a style="text-align: right; color: #074B80"  href="{{post.url}}">{{post.title}}</a></li>
+              <li><a style="margin-left:0;color: #074B80"  href="{{post.url}}">{{post.title}}</a></li>
               {% endfor %}
             </nav>
           </div>
