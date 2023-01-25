@@ -81,7 +81,7 @@ with machine learning. From there I’ll review the four steps of building a dee
 image classifier as well as compare and contrast traditional feature-based machine learning versus
 end-to-end deep learning.
 
-# **2.1. A Shift in Mindset**\
+# **2.1. A Shift in Mindset**
 Unlike coding up an algorithm to compute the Fibonacci sequence or sort a list of numbers,
 it’s not intuitive or obvious how to create an algorithm to tell the difference between pictures of
 cats and dogs. Therefore, instead of trying to construct a rule-based system to describe what each

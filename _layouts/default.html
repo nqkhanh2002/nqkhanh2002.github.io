@@ -31,7 +31,8 @@
               <div style="text-align: center;color: red;">
                 <strong  style="text-align: center;">TOTAL VISITED -  <span id="visits"></span></strong>
               </div>
-              {% for post in site.posts %}
+              {% assign sorted_posts = site.posts | sort: 'date' %}
+              {% for post in sorted_posts %}
               <li><a style="margin-left:0;color: #074B80"  href="{{post.url}}">{{post.title}}</a></li>
               {% endfor %}
             </nav>
