@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Research Paper
-categories : Paper-Explain
+title: How to Build Your Career in AI
+categories : Introduction
 author: Nguyen Quoc Khanh
 ---
 
