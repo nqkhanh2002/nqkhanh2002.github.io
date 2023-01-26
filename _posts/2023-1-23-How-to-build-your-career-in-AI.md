@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to build your career in AI
-categories : Paper-Explain
+categories : General
 author: Nguyen Quoc Khanh
 ---
 

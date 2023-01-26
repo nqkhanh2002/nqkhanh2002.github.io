@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bài 1 - AI, Machine Learning và Deep Learning 
-categories : Introduction
+title: 1 - AI, Machine Learning và Deep Learning 
+categories : General
 author: Nguyen Quoc Khanh
 ---
 
