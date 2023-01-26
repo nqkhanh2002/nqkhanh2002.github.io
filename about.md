@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Visit [my portfolio]() to know more about me!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Visit <a href="https://nqkhanh2002.github.io/portfolio/" target="_blank">my portfolio</a> to know more about me!
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[nqkdeveloper@gmail.com](mailto:nqkdeveloper@gmail.com)
