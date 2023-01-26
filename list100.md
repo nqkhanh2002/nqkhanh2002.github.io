@@ -4,7 +4,7 @@ title: List 100
 permalink: /list100/
 ---
 <!-- <i class="fa-solid fa-check"></i> -->
-**Things I want to do before die. (Current status: 3/100)** - Updated: 2023-1-26
+**Things I want to do before die. Get inspired by [Huyen Chip](https://huyenchip.com/list-100/) (Current status: 3/100)** - Updated: 2023-1-26
 1. <i class="fa-sharp fa-solid fa-xmark"></i> Lean English
 2. <i class="fa-sharp fa-solid fa-xmark"></i> Live in another country
 3. <i class="fa-sharp fa-solid fa-xmark"></i> Start a company
@@ -20,3 +20,5 @@ permalink: /list100/
 13. <i class="fa-solid fa-check"></i> Fall in love (ex now)
 14. <i class="fa-sharp fa-solid fa-xmark"></i> Be discipline
 15. <i class="fa-sharp fa-solid fa-xmark"></i> Be modesty
+16. <i class="fa-sharp fa-solid fa-xmark"></i> Typing 100 words per minute
+17. <i class="fa-sharp fa-solid fa-xmark"></i> Go somewhere where it's snowing
