@@ -10,7 +10,7 @@ permalink: /list100/
 3. <i class="fa-sharp fa-solid fa-xmark"></i> Start a company
 4. ~ Be awesome
 5. ~ Be kind
-6. <i class="fa-sharp fa-solid fa-xmark"></i> Read 1000 books (Started: 2023-1-1)
+6. <i class="fa-sharp fa-solid fa-xmark"></i> <a href="{{ site.baseurl }}/1000books/" target="_blank">Read 1000 books</a> (3/1000) (Started: 2023-1-1)
 7. <i class="fa-sharp fa-solid fa-xmark"></i> Become the first author of a paper at a top-tier conference
 8. <i class="fa-sharp fa-solid fa-xmark"></i> Bye a house
 9. <i class="fa-sharp fa-solid fa-xmark"></i> Bye a car
