@@ -1,22 +1,19 @@
 ---
 layout: post
-title: 4 - Object Detection Overview
+title: Post 4 - Object Detection Overview
 categories : Computer-Vision
 author: Nguyen Quoc Khanh
 ---
 
 <br>
+Các ứng dụng của giác máy tính là làm cho máy tính hiểu được hình ảnh kỹ thuật số cũng như dữ liệu trực quan từ thế giới thực. Điều này có thể liên quan đến việc trích xuất, xử lý và phân tích thông tin từ các đầu vào đó để đưa ra quyết định.
 
-Về bản chất, các nhiệm vụ thị giác máy tính là làm cho máy tính hiểu được hình ảnh kỹ thuật số cũng như dữ liệu trực quan từ thế giới thực. Điều này có thể liên quan đến việc trích xuất, xử lý và phân tích thông tin từ các đầu vào đó để đưa ra quyết định.
-
-Sự phát triển của thị giác máy chứng kiến ​​sự chính thức hóa quy mô lớn của các bài toán khó thành các phát biểu bài toán phổ biến có thể giải được.
-
-Việc phân chia các chủ đề thành các nhóm được hình thành tốt với danh pháp phù hợp đã giúp các nhà nghiên cứu trên toàn cầu xác định các vấn đề và giải quyết chúng một cách hiệu quả.
+Sự phát triển của thị giác máy đã phân loại hóa các bài toán khó thành các phát biểu bài toán phổ biến có thể giải được. Việc phân chia các chủ đề thành các nhóm bài toán phù hợp đã giúp các nhà nghiên cứu trên toàn cầu xác định các vấn đề và giải quyết chúng một cách hiệu quả. 
 
 Các tác vụ thị giác máy tính phổ biến nhất mà chúng ta thường thấy trong thuật ngữ AI bao gồm:
 
 * **Phân loại hình ảnh (image classification)**: liên quan đến việc gán nhãn cho hình ảnh.
-* **Định vị vật thể (object localization)**: liên quan đến việc vẽ một hộp giới hạn (bounding box) xung quanh một hoặc nhiều đối tượng trong hình ảnh nhằm khoanh vùng đối tượng.
+* **Định vị vật thể (object localization)**: Xác định một hộp giới hạn (bounding box) xung quanh một hoặc nhiều đối tượng trong hình ảnh nhằm khoanh vùng đối tượng.
 * **Phát hiện đối tượng (object detection)**: Là nhiệm vụ khó khăn hơn và là sự kết hợp của cả hai nhiệm vụ trên: Vẽ một bounding box xung quanh từng đối tượng quan tâm trong ảnh và gán cho chúng một nhãn. Kết hợp cùng nhau, tất cả các vấn đề này được gọi là object recognition hoặc object detection.
 Bài viết này sẽ giới thiệu một cách khái quát các vấn đề của object detection và các mô hình deep learning state-of-art được thiết kế để giải quyết nó.
 
@@ -28,9 +25,9 @@ Phân loại hình ảnh liên quan đến việc dự đoán lớp của một 
 
 - **Image classification**: Dự đoán nhãn của một đối tượng trong một hình ảnh.
     - Input: Một hình ảnh với một đối tượng, chẳng hạn như một bức ảnh.
-    - Output: Nhãn lớp (ví dụ: một hoặc nhiều số nguyên được ánh xạ tới nhãn lớp).
+    - Output: Dán nhãn (label) cho hình ảnh (ví dụ: một hoặc nhiều số nguyên được ánh xạ tới label).
 - **Object location**: Xác định vị trí hiện diện của các đối tượng trong ảnh và cho biết vị trí của chúng bằng bounding box.
-    - Input: Một hình ảnh có một hoặc nhiều đối tượng, chẳng hạn như một bức ảnh.
+    - Input: Một hình ảnh có một hoặc nhiều đối tượng.
     - Output: Một hoặc nhiều bounding box được xác định bởi tọa độ tâm, chiều rộng và chiều cao.
 - **Object detection**: Xác định vị trí hiện diện của các đối tượng trong bounding box và nhãn của các đối tượng nằm trong một hình ảnh.
     - Input: Một hình ảnh có một hoặc nhiều đối tượng, chẳng hạn như một bức ảnh.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 1 - AI, Machine Learning và Deep Learning 
+title: Post 1 - AI, Machine Learning và Deep Learning 
 categories : General
 author: Nguyen Quoc Khanh
 ---

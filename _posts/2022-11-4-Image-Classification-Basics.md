@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 3 - Image Classification Basics
+title: Post 3 - Image Classification Basics
 categories : Computer-Vision
 author: Nguyen Quoc Khanh
 ---
