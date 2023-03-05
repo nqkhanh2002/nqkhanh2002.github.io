@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Computer Vision RoadMap
-categories : General
+categories : Computer-Vision
 author: Nguyen Quoc Khanh
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Datasets
-categories : General
+title: Datasets for Computer Vision
+categories : Computer-Vision
 author: Nguyen Quoc Khanh
 ---
 

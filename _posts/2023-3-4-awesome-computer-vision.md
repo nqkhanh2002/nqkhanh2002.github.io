@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Awesome Computer Vision
-categories : General
+categories : Computer-Vision
 author: Nguyen Quoc Khanh
 ---
 
