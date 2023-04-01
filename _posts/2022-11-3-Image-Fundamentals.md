@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Post 2 - Image Fundamentals
+title: Post 2 [Eng] - Image Fundamentals
 categories : Computer-Vision 
 author: Nguyen Quoc Khanh
 ---
