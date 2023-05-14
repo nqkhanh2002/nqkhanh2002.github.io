@@ -8,6 +8,7 @@ author: Nguyen Quoc Khanh
 <br>
 
 <!-- {% include image.html url="\images\post10\intro.jpg" description="" %} -->
+{% include image.html url="\images\post11\intro.png" description="" %}
 
 # 1. Active Learning là gì?
 Active Learning là một phương pháp học máy (machine learning) trong đó mô hình được huấn luyện để chủ động tương tác và học từ các dữ liệu mới một cách thông minh hơn. Thay vì yêu cầu một lượng lớn các dữ liệu được gán nhãn trước để huấn luyện mô hình, Active Learning sử dụng các thuật toán để chọn các mẫu dữ liệu tiềm năng để được gán nhãn và sử dụng chúng để cải thiện mô hình.
@@ -20,6 +21,9 @@ Tiếp theo ta sẽ đi vào tìm hiểu các nội dung trong phần 1 của ch
 
 Bài viết có sự tham khảo từ  nhiều nguồn và khóa Active Learning của team Sun* AI Research Team. Rất cảm ơn team đã giới thiệu về kỹ thuật này. 
 # 2. Dữ liệu quan trọng như thế nào? 
+
+{% include image.html url="\images\post11\data.png" description="" %}
+
 Dữ liệu là yếu tố cực kỳ quan trọng trong trí tuệ nhân tạo (AI). Một mô hình AI cần phải được huấn luyện trên các dữ liệu đầu vào để có thể học và hiểu các quy luật hoặc mối quan hệ giữa các đặc trưng của dữ liệu. Điều này giúp mô hình có thể dự đoán và đưa ra các quyết định dựa trên dữ liệu mới, chưa từng được mô hình thấy trước đó.
 
 Dữ liệu có thể được thu thập bởi chỉnh con người và cung cấp cho các mô hình học máy hoặc với sự phát triển của AI ngày nay, các mô hình đã có thể tự học và tự thu thập dữ liệu. Điều này được thực hiện thông qua các phương pháp học tăng cường và học sâu tự động (self-supervised learning) mà có thể tự động tạo ra các dữ liệu mới để huấn luyện và cải thiện mô hình.
@@ -43,6 +47,8 @@ Nhìn chung, dữ liệu thu thập được cũng phải đáp ứng một số
 
 Vậy quay trở lại gần hơn với chủ đề ngày hôm nay của chúng ta là Active Learning, ta sẽ  nói đến một khái niệm nữa liên quan tới dữ liệu là gán nhãn dữ liệu (labeling)
 # 3. Gán nhãn dữ liệu (labeling)
+
+{% include image.html url="\images\post11\label.png" description="" %}
 
 Ta có thể thấy các mô hình học máy được con người xây dựng đều mong muốn giải quyết một bài toán thực trong cuộc sống. Các tác vụ có thể kể đến như phân loại, phát hiện, nhận diện, dự đoán,.. Và đa phần các bài toán đó đều thuộc dạng bài toán học có giám sát (supervised learning) (so với bài toán unsupervised learning). 
 
@@ -69,7 +75,58 @@ Mặc dù việc tự động hoặc bán tự động gán nhãn dữ liệu đ
 
 # 5. Khi nào sử dụng Active Learning 
 
+1. Dữ liệu là tài nguyên quý giá: Khi dữ liệu là tài nguyên quý giá và việc thu thập dữ liệu mới gian khổ hoặc đắt đỏ, Active Learning có thể giúp tận dụng tối đa dữ liệu hiện có để đạt được hiệu quả cao trong quá trình huấn luyện mô hình học máy .
+
+2. Quá trình gán nhãn dữ liệu là tốn kém: Khi quá trình gán nhãn dữ liệu là tốn kém và tốn thời gian, Active Learning có thể giúp tiết kiệm thời gian và chi phí bằng cách chỉ chọn những mẫu dữ liệu quan trọng nhất để gán nhãn mà các chiến lược random sampling không phát huy tác dụng. 
+
+3. Có sự khác biệt lớn về chất lượng dữ liệu: Khi có sự khác biệt lớn về chất lượng dữ liệu, Active Learning có thể giúp xử lý vấn đề này bằng cách chọn những mẫu dữ liệu có chất lượng cao để đảm bảo tính đáng tin cậy của mô hình học máy.
+
+4. Cần đạt được kết quả cao với số lượng dữ liệu nhỏ: Khi cần đạt được kết quả cao với số lượng dữ liệu nhỏ, Active Learning có thể giúp tăng hiệu suất của mô hình học máy bằng cách tận dụng tối đa dữ liệu.
+
+5. Mô hình học máy cần được cập nhật liên tục: Khi mô hình học máy cần được cập nhật liên tục với dữ liệu mới, Active Learning có thể giúp đảm bảo tính linh hoạt và nhanh chóng của quá trình huấn luyện mô hình học máy.
+
+# 6. Các hướng tiếp cận trong Active Learning 
+
+{% include image.html url="\images\post11\pipline.webp" description="" %}
+
+Các bước trong active learning pipeline bao gồm:
+
+1. Xác định dữ liệu đầu vào: Lựa chọn dữ liệu ban đầu từ tập dữ liệu toàn bộ để huấn luyện mô hình học máy.
+
+2. Huấn luyện mô hình: Sử dụng dữ liệu đầu vào để huấn luyện mô hình học máy ban đầu.
+
+3. Chọn các mẫu không được gán nhãn: Sử dụng mô hình học máy ban đầu để đánh giá các mẫu chưa được gán nhãn và chọn ra những mẫu quan trọng nhất cho quá trình tiếp theo.
+
+4. Gán nhãn các mẫu quan trọng: Những mẫu được chọn sẽ được gán nhãn bởi một chuyên gia hoặc một thuật toán.
+
+5. Mở rộng tập dữ liệu: Các mẫu đã được gán nhãn được thêm vào tập dữ liệu huấn luyện để tăng độ phủ của tập dữ liệu.
+
+5. Huấn luyện lại mô hình: Sử dụng tập dữ liệu mở rộng để huấn luyện lại mô hình học máy và đánh giá hiệu suất của nó.
+
+Quá trình từ bước 3 đến bước 6 được lặp lại cho đến khi đạt được độ chính xác mong muốn hoặc không còn cách nào để giảm số lượng dữ liệu được gán nhãn. Quá trình này được gọi là iterative process trong Active Learning. 
+
+Ba hướng Data Sampling chính:
+
+1. Random sampling: là phương pháp lấy mẫu ngẫu nhiên từ tập dữ liệu để được gán nhãn. Phương pháp này đơn giản và dễ thực hiện, tuy nhiên nó không đảm bảo sự hiệu quả của quá trình huấn luyện mô hình.
+
+2. Uncertainty sampling: là phương pháp lấy những mẫu mà mô hình không chắc chắn về kết quả dự đoán để được gán nhãn. Phương pháp này được xây dựng dựa trên giả định rằng những mẫu mà mô hình không chắc chắn về kết quả dự đoán sẽ cần được gán nhãn để cải thiện hiệu suất của mô hình. Các phương pháp uncertainty sampling phổ biến bao gồm:
+
+- Margin sampling: Lựa chọn các mẫu mà khoảng cách giữa các xác suất được dự đoán của hai lớp gần bằng nhau.
+- Entropy sampling: Lựa chọn các mẫu mà entropy của xác suất dự đoán của các lớp lớn hơn.
+3. Diversity sampling: là phương pháp lấy những mẫu mà đại diện cho các khía cạnh đa dạng của tập dữ liệu để được gán nhãn. Phương pháp này được xây dựng dựa trên giả định rằng các mẫu đại diện cho các khía cạnh đa dạng của tập dữ liệu sẽ cần được gán nhãn để giúp mô hình học được các mẫu khác trong tập dữ liệu. Các phương pháp diversity sampling phổ biến bao gồm:
+- Cluster sampling: Lựa chọn các mẫu trong các cụm khác nhau của tập dữ liệu để đảm bảo đại diện cho các cụm dữ liệu khác nhau.
+- Representative sampling: Lựa chọn các mẫu mà đại diện cho các đặc trưng quan trọng của tập dữ liệu để đảm bảo đại diện cho các đặc trưng quan trọng của tập dữ liệu.
+
+Ở phần này, ta đã cùng nhau tìm hiểu
+- Tầm quan trọng của dữ liệu trong AI/ML
+- Các khái niệm cơ bản về Active Learning
+- Các hướng tiếp cận chính của Active Learning
+Ở phần sau, ta sẽ đi sâu tìm hiể về:
+- Lý thuyết và thực hành Uncertainty Sampling vào bài toán cụ thể. Các bạn cùng đón xem nhé ! 
+
+
 # 7. Tham khảo
 [1]. https://viblo.asia/p/lam-gi-khi-mo-hinh-hoc-may-thieu-du-lieu-co-nhan-phan-1-tong-quan-ve-active-learning-RQqKLRLbl7z
+
 
 [2]. https://viblo.asia/p/khoa-hoc-active-learning-bai-1-tong-quan-ve-active-learning-GyZJZNZ8Jjm
