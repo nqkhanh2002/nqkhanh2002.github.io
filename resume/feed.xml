@@ -3,8 +3,8 @@
   <channel>
     <title>Yen-Yu Chang</title>
     <description>{&quot;en&quot;=&gt;&quot;This is an academic website for Yen-Yu Chang to share his experiences, projects, and publications.&quot;}</description>
-    <link>https://yuyuchang.github.io/</link>
-    <atom:link href="https://yuyuchang.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://nqkhanh2002.github.io/resume/</link>
+    <atom:link href="https://nqkhanh2002.github.io/resume/feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>Sat, 10 Oct 2020 03:18:16 +0000</pubDate>
     <lastBuildDate>Sat, 10 Oct 2020 03:18:16 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
