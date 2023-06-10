@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Posts</title>
+  <meta name="description" lang="en" content="This is an academic website for Hexiang Hu to share his experiences, projects, publications and tech/non-tech posts. Hexiang Hu is a Ph.D. student at University of California Los Angeles(UCLA), working with Prof. Fei Sha. His research interests lie in the field of Machine Learning and Computer Vison, particularly in Deep Learning. ">
+  <meta name="description" lang="cn" content="这是胡鹤翔的个人学术主页，用于分享他的个人经历，项目，学术论文，技术相关/不相关的博客。">
+  <meta name="keywords" lang="en" content="Hexiang Hu,Publications,Posts,Research,Deep Learning,Computer Vision,Natural Language Processing" />
+  <meta name="keywords" lang="cn" content="胡鹤翔,学术论文,博客,研究,深度学习,计算机视觉,自然语言处理" />
+  
+  
+
+  <link rel="shortcut icon" href="/images/favicon.svg">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://hexiang-hu.github.io/posts/">
+  <link rel="alternate" type="application/rss+xml" title="Hexiang Hu" href="https://hexiang-hu.github.io/feed.xml" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="/js/jquery-2.1.3.min.js"> </script>
+
+  <!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+</script>
+<![endif]-->
+
+
+
+</head>
+
+
+  <body>
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K5ZTMW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K5ZTMW');</script>
+<!-- End Google Tag Manager -->
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" href="/">Hexiang Hu</a>
+<nav class="site-nav">
+  <a href="#" class="menu-icon">
+    <svg viewBox="0 0 18 15">
+      <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+    </svg>
+  </a>
+
+  <div class="trigger">
+    <a class="page-link" href="/">Home</a>
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+        
+        <a class="page-link" href="/posts/">Posts</a>
+        
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+        
+        
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+  </div>
+</nav>
+
+  </div>
+</header>
+
+    <div id="profile-cover" class="cover shallow-bg img-responsive">
+  
+  <div id="profile-namecard" class="profile-wrapper wrapper-light">
+    <div id="my-pic" class="profile-col profile-col-1">
+      <img id="profile-avatar" src="/images/self-portrait/me.jpg" alt="Me" class="circle-img border-dark"/>
+    </div>
+    <div id="my-contact" class="profile-col profile-col-2">
+      <div id="my-name" class="text-grey-dark">
+        Hexiang (Frank) Hu
+      </div>
+      <div id="my-title" class="text-grey">
+        Ph.D. Student [at] USC
+      </div>
+      <div id="my-email" class="text-grey-light">
+        hexiang.frank.hu [at] gmail.com
+      </div>
+      <div class="social-media">
+          
+<a href="https://github.com/Hexiang-Hu" class="icon-button github">
+  <i class="fa fa-github icon-github"></i>
+  <span></span>
+</a>
+
+
+
+<a href="https://twitter.com/Hexiang_Hu" class="icon-button twitter">
+  <i class="fa fa-twitter icon-twitter"></i>
+  <span></span>
+</a>
+
+
+
+<a href="https://facebook.com/Hu.Hexiang" class="icon-button facebook">
+  <i class="fa fa-facebook icon-facebook"></i>
+  <span></span>
+</a>
+
+
+
+<a href="https://linkedin.com/in/hexianghu" class="icon-button linkedin">
+  <i class="fa fa-linkedin icon-linkedin"></i>
+  <span></span>
+</a>
+
+
+      </div>
+    </div>
+    <div id="my-desc" class="profile-col profile-col-2 hide">
+      <div id="my-desc-title">
+        Deep Learner
+      </div>
+      <div id="my-desc-content">
+        I am passionate with Machine Learning, Computer Vision as well as Natural Language Processing.
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  function deepFeature()
+  {
+    $('#profile-avatar').attr('src', '/images/self-portrait/deep-me.jpg');
+    $('#profile-avatar').removeClass('border-dark');
+    $('#profile-avatar').addClass('border-bright');
+
+    $('#profile-cover').removeClass('shallow-bg');
+    $('#profile-cover').addClass('deep-bg');
+    
+    $('#profile-namecard').removeClass('wrapper-light');
+    $('#profile-namecard').addClass('wrapper-dark');
+    
+    $('#my-desc').removeClass('hide');
+    $('#my-contact').addClass('hide');    
+    // console.log('Move in now...');
+  }
+
+  function shallowFeature()
+  {
+    $('#profile-avatar').attr('src', '/images/self-portrait/me.jpg');
+    $('#profile-avatar').removeClass('border-bright');
+    $('#profile-avatar').addClass('border-dark');
+
+    $('#profile-cover').removeClass('deep-bg');
+    $('#profile-cover').addClass('shallow-bg');
+    
+    $('#profile-namecard').removeClass('wrapper-dark');
+    $('#profile-namecard').addClass('wrapper-light');
+    
+    $('#my-contact').removeClass('hide');
+    $('#my-desc').addClass('hide');
+    // console.log('Move out now...');
+  }
+
+  $(function() { 
+    $('#my-pic').hover(deepFeature, shallowFeature);
+  })
+
+</script>
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div id="posts" class="posts">
+
+  <h1 class="heading">Posts</h1>
+  <ul class="post-list">
+  
+    <li class="post-item">
+      <span class="post-meta">Mar 23, 2015</span>
+
+      <h2>
+        <a class="post-link" href="/graphics/2015/03/23/shading/">Graphics: Shading</a>
+      </h2>
+      <div class="content preview">
+        
+          <p>Shading refers to depicting depth perception in 3D models or illustrations by varying levels of darkness. In computer graphics, shading refers to the process of altering the color of an object in 3D scene, based on its angle to lights and its distance from lights to create a photorealistic effect.</p>
+
+
+        
+      </div>
+    </li>
+  
+    <li class="post-item">
+      <span class="post-meta">Mar 22, 2015</span>
+
+      <h2>
+        <a class="post-link" href="/graphics/2015/03/22/local-reflectance-model/">Graphics: Understanding Local Reflectance Model</a>
+      </h2>
+      <div class="content preview">
+        
+          <p>Illumination and reflectance over objects makes image looks real, since light-material interaction in real world caused each point of the object have different colors and shades.This post is written to discuss some factors about illumination and reflectance models(global, local, etc.), and explore how computer graphic deals with illumination and reflectance of objects.</p>
+
+
+        
+      </div>
+    </li>
+  
+    <li class="post-item">
+      <span class="post-meta">Mar 15, 2015</span>
+
+      <h2>
+        <a class="post-link" href="/big-data/2015/03/15/druid/">Druid: A Real-time Analytical Data Store</a>
+      </h2>
+      <div class="content preview">
+        
+          <p>Druid is an open source data store designed for real-time exploratory analytics on large data sets. The system combines a column-oriented storage layout, a distributed, shared-nothing architecture, and an advanced indexing structure to allow for the arbitrary exploration of billion-row tables with sub-second latencies.</p>
+
+
+        
+      </div>
+    </li>
+  
+    <li class="post-item">
+      <span class="post-meta">Mar 9, 2015</span>
+
+      <h2>
+        <a class="post-link" href="/big-data/2015/03/09/dynamo/">Dynamo: Amazon's Highly Available Key value Store</a>
+      </h2>
+      <div class="content preview">
+        
+          <p>Dynamo is a highly available key-value storage system built by Amazon. It sacrifices a consistency under certain failure scenarios, makes extensive use of object versioning and application-assisted conflict resolution in a manner that provides a novel interface for developers to use.</p>
+
+
+        
+      </div>
+    </li>
+  
+    <li class="post-item">
+      <span class="post-meta">Mar 2, 2015</span>
+
+      <h2>
+        <a class="post-link" href="/2015/03/02/terminal-configuration/">Terminal Configuration</a>
+      </h2>
+      <div class="content preview">
+        
+          <p>This Post is just used for keeping personal configuration files online</p>
+
+
+        
+      </div>
+    </li>
+  
+    <li class="post-item">
+      <span class="post-meta">Mar 1, 2015</span>
+
+      <h2>
+        <a class="post-link" href="/big-data/2015/03/01/delay-scheduling/">Delay Scheduling: A Simple Technique for Achieving Locality and Fairness in Cluster Scheduling</a>
+      </h2>
+      <div class="content preview">
+        
+          <p>This is a paper motivated by the scheduling problem raised in traditional FIFO strategy in data-intensive cluster computing system.</p>
+
+<p>The proposed methodology is designed to get a good tradeoff point between the conflicts of fairness and data locality, which practically improve response time for small jobs by 5x in a multi-user workload and double throughput in an IO-heavy workload.</p>
+
+
+        
+      </div>
+    </li>
+  
+  </ul>
+
+  <!-- Pagination links -->
+  
+    <div id="paginator" class="paginate-container flexible-size">
+      <div class="pagination">
+
+        <ul id="pagination-list">
+          
+            <li class="deactive float-left">
+              <a href="#paginator"></a>
+            </li>
+            <li class="deactive float-left">
+              <a href="#paginator"></a>
+            </li>
+          
+
+          
+
+            
+              <li id="1" class="page active">
+                <a href="#paginator">1</a>
+              </li>
+            
+
+          
+
+            
+              <li id="2" class="page">
+                <a href="/posts/page/2/#paginator">2</a>
+              </li>
+            
+
+          
+
+          
+            <li class="float-right">
+              <a href="/posts/page/2/#paginator "></a>
+            </li>
+            <li class="float-right">
+              <a href="/posts/page/2/#paginator"></a>
+            </li>
+          
+
+        </ul>
+
+      </div>
+    </div>
+  
+</div>
+
+<script charset="utf-8">
+  var pageNum = $(".page").length;
+  // Make different apperance with different screen resolution
+  var onPalm = window.matchMedia( "(min-width: 600px)" );
+  var onLaptop = window.matchMedia( "(min-width: 800px)" );
+
+  if(onLaptop.matches){
+
+    if( parseInt(pageNum) >= 7){
+      // Make all pages hidden
+      $(".page").hide();
+
+      var activeId = $(".active").attr('id');
+      var startId = Math.max(activeId - 3, 1);
+      var endId = startId + 6;
+
+      // First append "..." element before the first visible page if it is
+      // greater than 0
+      if ( startId > 1 ){ $('li#1').before("<li><em>...</em></li>"); }
+
+      // Append "..." element after the last page
+      $('li#'+endId).after("<li><em>...</em></li>");
+
+      // For loop through all visible pages and display them
+      for( var i = startId; i <= endId; i++){ $('li#'+i).show(); }
+    }
+  }
+  else if(onPalm.matches){
+    if( parseInt(pageNum) >= 5){
+      // Make all pages hidden
+      $(".page").hide();
+
+      var activeId = $(".active").attr('id');
+      var startId = Math.max(activeId - 2, 1);
+      var endId = startId + 4;
+
+      // First append "..." element before the first visible page if it is
+      // greater than 0
+      if ( startId > 1 ){ $('li#1').before("<li><em>...</em></li>"); }
+
+      // Append "..." element after the last page
+      $('li#'+endId).after("<li><em>...</em></li>");
+
+      // For loop through all visible pages and display them
+      for( var i = startId; i <= endId; i++){ $('li#'+i).show(); }
+    }
+  }
+</script>
+
+      </div>
+    </div>
+
+    
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">
+      <a class="page-link" href="https://hexiang-hu.github.io/about">
+      About Hexiang Hu
+    </a></h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Hexiang (Frank) Hu</li>
+          <li><a href="mailto:">hexiang.frank.hu [at] gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        
+<a href="https://twitter.com/Hexiang_Hu">
+  <img src="/images/icon/color-twitter.png" class="social-icon">
+</a>
+
+
+
+<a href="https://linkedin.com/in/{{hexianghu">
+  <img src="/images/icon/color-linkedin.png" class="social-icon">
+</a>
+
+
+
+<a href="https://github.com/Hexiang-Hu">
+  <img src="/images/icon/color-github.png" class="social-icon">
+</a>
+
+
+
+<a href="https://facebook.com/Hu.Hexiang">
+  <img src="/images/icon/color-facebook.png" class="social-icon">
+</a>
+
+
+
+<a href="/feed.xml">
+  <img src="/images/icon/color-rss.png" class="social-icon">
+</a>
+
+
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">This is an academic website for Hexiang Hu to share his experiences, projects, publications and tech/non-tech posts</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+    <div class="back-to-top">Top</div>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+    });
+    
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+});
+</script>
+  </body>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60071442-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</html>

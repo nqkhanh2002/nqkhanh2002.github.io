@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A Closed-From Solution to Natural Image Matting</title>
+  <meta name="description" lang="en" content="This article is a summary for PAMI 2013 paper - A closed-form solution to natural image matting.">
+  <meta name="description" lang="cn" content="This article is a summary for PAMI 2013 paper - A closed-form solution to natural image matting.">
+  <meta name="keywords" lang="en" content="Hexiang Hu,Publications,Posts,Research,Deep Learning,Computer Vision,Natural Language Processing" />
+  <meta name="keywords" lang="cn" content="胡鹤翔,学术论文,博客,研究,深度学习,计算机视觉,自然语言处理" />
+  
+  
+    <meta name="description" content="This article is a summary for PAMI 2013 paper - A closed-form solution to natural image matting.">
+  
+
+  <link rel="shortcut icon" href="/images/favicon.svg">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://hexiang-hu.github.io/vision/2015/02/25/closed-form-image-matting/">
+  <link rel="alternate" type="application/rss+xml" title="Hexiang Hu" href="https://hexiang-hu.github.io/feed.xml" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="/js/jquery-2.1.3.min.js"> </script>
+
+  <!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+</script>
+<![endif]-->
+
+
+
+</head>
+
+
+  <body>
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K5ZTMW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K5ZTMW');</script>
+<!-- End Google Tag Manager -->
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" href="/">Hexiang Hu</a>
+<nav class="site-nav">
+  <a href="#" class="menu-icon">
+    <svg viewBox="0 0 18 15">
+      <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+    </svg>
+  </a>
+
+  <div class="trigger">
+    <a class="page-link" href="/">Home</a>
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+        
+        <a class="page-link" href="/posts/">Posts</a>
+        
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+        
+        
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+  </div>
+</nav>
+
+  </div>
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">A Closed-From Solution to Natural Image Matting</h1>
+    <p class="post-meta">Feb 25, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>This article is a summary for PAMI 2013 paper - A closed-form solution to natural image matting.</p>
+
+<!--more-->
+
+<hr class="soft" />
+
+<h3 id="introduction">Introduction</h3>
+
+<h4 id="targets">Targets</h4>
+<ul>
+  <li>Extracting a foreground object from an imaeg based on limited input.</li>
+</ul>
+
+<h4 id="challenges">Challenges</h4>
+<ul>
+  <li>The problem is ill-posed
+    <ul>
+      <li>At each pixel we must estimate the foreground and the background colors, as well as the foreground opacity from a single color measurement.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="the-matting-equation">The Matting Equation</h4>
+<ul>
+  <li>For an input image I, it is assumed to be composited of foreground F and background B. The color of i-th pixel is assumed to be a linear combination of the corresponding foreground and background colors:</li>
+</ul>
+
+\[\begin{equation}
+    I_i = \alpha_i \cdot F_i\ +\ (1 - \alpha_i) \cdot B_i
+\end{equation}\]
+
+<ul>
+  <li>The variables on the right hand side are unknown in the image, so considering about the total 3 color channels, the total number of unknowns here would be 7.</li>
+</ul>
+
+<h3 id="overview-of-this-papers-method">Overview of this paper’s method</h3>
+
+<h4 id="1-derivation">1. Derivation</h4>
+
+<ul>
+  <li><strong>Local Smoothness Assumption</strong>
+    <ul>
+      <li>The matting problem is severely underconstrained, so in this paper the author made an assumption taht both <strong>F and B are approximately constant</strong> oevr <strong>a small window around each pixel</strong>, in order to derive their solution for the gray-scale case</li>
+    </ul>
+  </li>
+</ul>
+
+<h6 id="11-start-from-grey-image">1.1 Start from grey image</h6>
+
+<ul>
+  <li>As a result of the local smoothness assumption goes, we can express $\alpha$ as a linear function of the iamge I:</li>
+</ul>
+
+\[\begin{align}
+    \alpha_i \ &amp;\approx \ a \cdot I_i \ +\ b,  \forall{ i \in w} \\
+    &amp; \textit{where $a = \frac{1}{ F - B}$ and $b = \frac{B}{F - B}$ }
+\end{align}\]
+
+<ul>
+  <li>So the goal is to find the alpha that minimize the cost function</li>
+</ul>
+
+\[\begin{equation}
+J(\alpha, a, b) = \sum_{j \in I} {( \sum_{i \in w_j } {(\alpha_j - a_j \cdot I_j - b_j)^2 + \epsilon \cdot {a_j}^2 } })
+\end{equation}\]
+
+<ul>
+  <li>
+    <p>In their implementation, they typically use windows of 3 x 3 pixels. And since windows are placed around each pixel, the window overlaps, which enables the propagation of information between neighboring pixels.</p>
+  </li>
+  <li>
+    <p>The cost function is quadratic in $\alpha$, a, and b, with 3N unknowns for an imaeg with N pixels</p>
+  </li>
+  <li>
+    <p><strong>Theorem 1</strong> [ <em>which eliminaets constant a and b</em> ]</p>
+
+    <ul>
+      <li>Define J($\alpha$) as $J(\alpha) = min_{a,b} J(\alpha, a, b)$</li>
+      <li>Then, $J(\alpha) = \alpha^{T} \cdot L \cdot \alpha$</li>
+      <li>Where the laplacian matrix L is an N x N matrix, whose (i, j)th entry is:</li>
+    </ul>
+  </li>
+</ul>
+
+\[\begin{equation}
+\sum_{k(i,j) \in w_k} {( \delta_{ij} - \frac{1}{\mid w_k \mid} \cdot (1 + \frac{1}{ \frac{\epsilon}{\mid w_k \mid} + \sigma_k^2} \cdot (I_i - \mu_k) \cdot (I_j - \mu_k) ) ) }
+\end{equation}\]
+
+<ul>
+  <li>
+    <ul>
+      <li>where $\delta_{ij}$ is the Kronecker delta, $\mu_k$ and $\sigma_k^2$ are the mean and variance of the intensities in the window $w_k$ around k, and $\mid w_k \mid$ is the number of pixels in this window</li>
+    </ul>
+  </li>
+  <li><strong>Proof of theorem 1?(Not quite understand)</strong></li>
+</ul>
+
+<h6 id="12-extend-to-color-image">1.2 Extend to color image</h6>
+
+<ul>
+  <li>To extend this method into color image, they simply replace the linear model with a 4D linear model</li>
+</ul>
+
+\[\begin{align}
+\alpha_i &amp;\approx \sum_c \alpha^c \cdot I_i^c + b, \forall i \in w, \textit{where c sums over color channels}
+\end{align}\]
+
+<ul>
+  <li>
+    <p>This model relaxes the previous assumption that F and B are constant over each window. Instead, it assumes that in a small window each of F and B is a linear mixture of two colors.</p>
+
+    <ul>
+      <li>In other words,  $F_i = \beta_i^F \cdot F_1 + (1 - \beta_i^F) \cdot F_2$, and $B_i = \beta_i^B \cdot B_1 + (1 - \beta_i^B) \cdot B_2$</li>
+    </ul>
+  </li>
+  <li>
+    <p>And similarly to grey-scale case, we could define the cost function as following:</p>
+  </li>
+</ul>
+
+\[\begin{align}
+J(\alpha, a, b) = \sum_{j \in I}{( \sum_{i \in w_j } { (\alpha_j - \sum_c{ a_j^c \cdot I_j^c} - b_j)^2} + \epsilon \cdot \sum_c{ {a_j^c}^2 }
+)}
+\end{align}\]
+
+<ul>
+  <li>Thus, we could further get $J(\alpha) = \alpha^{T} \cdot L \cdot \alpha$, where L is defined as following:</li>
+</ul>
+
+\[\begin{equation}
+\sum_{k(i,j) \in w_k} {( \delta_{ij} - \frac{1}{\mid w_k \mid} \cdot (1 + (I_i - \mu_k) \cdot (\Sigma_k + \frac{\epsilon}{ \mid w_k \mid } \cdot I_3 )^{-1} \cdot ( I_j -\mu_k) ) }
+\end{equation}\]
+
+<ul>
+  <li>where $\Sigma_k$ is a 3 x 3 covariance matrix, $\mu_k$ is a 3 x 1 mean vector of the colors in a window $w_k$, and I_3 is the 3 x 3 identity matrix</li>
+</ul>
+
+<h6 id="matting-laplacian">Matting Laplacian</h6>
+
+<ul>
+  <li>The matrix L in previous section is refered as a matting laplacian.
+    <ul>
+      <li>Elements in each row of L sum to zero, therefore <strong>the null space of L includes the constant vector?(Not quite understand)</strong></li>
+    </ul>
+  </li>
+  <li>Since the edge contrasts in the different color channels are different, by scaling the color channels appropriately, <strong>this model is able to actually cancel the background edge?(Not quite understand)</strong></li>
+</ul>
+
+<h4 id="2-user-interaction--constraint">2. User Interaction &amp; Constraint</h4>
+
+<ul>
+  <li>
+    <p>User-supplied constraint on the matte may be provided via a scribble-based GUI or a trimap</p>
+  </li>
+  <li>
+    <p>To extract an alpha matte matching we are going to solve</p>
+  </li>
+</ul>
+
+\[\begin{align}
+\alpha = &amp;argmin\ \alpha^T \cdot L \cdot \alpha + \lambda \cdot (\alpha^T - b_S^T) \cdot D_S \cdot (\alpha - b_S), \\
+\end{align}\]
+
+<ul>
+  <li>
+    <p>where $\lambda$ is some large number $D_S$ is a diagonal matrix whose diagonal elements are one for constrained pixels and zero for all other pixels, and $b_S$ is the vector containing the specified alpha values for the constrained pixels and zero for all others</p>
+  </li>
+  <li>
+    <p>Since the above is quadratic in alpha, the global minimum may be found by differentiating and setting the derivatives to zero, which amounts to <strong>solving the sparse linear system:</strong></p>
+  </li>
+</ul>
+
+\[\begin{align}
+(L + \lambda \cdot D_S) \cdot \alpha = \lambda \cdot b_S
+\end{align}\]
+
+<h6 id="3-optimization">3. Optimization</h6>
+
+<ul>
+  <li>In order to solve the sparse linear system efficiently, they proposed a coarse-to-fine scheme.
+    <ol>
+      <li>They dowmsample the image and the constraints, then solve it at a lower resolution</li>
+      <li>The recovered alpha matte is then interpolated to the finer resolution
+  2.1 Alpha values are thresholded and pixels with alpha close to zero or one are clamped and considered as contrained in the finer resolution
+  2.2 Constrained pixels may be eliminated from the system, reducing the system size.[so there is no need to enforce local linear modes in constrained areas]</li>
+      <li>When computing the matting laplacian matrix, sum only windows w_k that contain at least one unconstrained pixel</li>
+      <li><strong>Clamping alpha values to zero or one is also useful in avoiding oversmoothed alpha mattes?(Not quite understand)</strong></li>
+      <li>Side-effect: Long-thin structures may be lost</li>
+    </ol>
+  </li>
+</ul>
+
+<h6 id="4reconstrctuing-f-and-b">4.Reconstrctuing F and B</h6>
+
+<ul>
+  <li>One approach for recontructing F and B is to solve $\alpha_i \approx \sum_c{\alpha^c \cdot I_i^c + b}$, with the optimal a and b given $\alpha$ using least squares.</li>
+  <li>In order to extract F and B from a and b, there is an additional matting parameter taht should be recovered ($\beta$ )</li>
+  <li>
+    <p>For complex foreground and background patterns, F and B can be solved using the compositing equation, introducing some explicit smoothness priors on F and B.</p>
+  </li>
+  <li>Specifically, we minimize a system of the form</li>
+</ul>
+
+\[\begin{align}
+min &amp;\sum_{i \in I}{\sum_c{ (\alpha_i \cdot F_i^c + (1 - \alpha_i) \cdot B_i^c - I_i^c)^2
++ \mid \alpha_{i_x} \mid \cdot ((F_{i_x}^c)^2 + (B_{i_x}^c)^2) + \mid \alpha_{i_y} \mid \cdot ( (F_{i_y}^c)^2 + (B_{i_y}^c)^2 ) }} \\
+&amp;\textit{where $F_{i_x}^c, F_{i_y}^c, B_{i_x}^c,B_{i_y}^c$ are the x and y derivatives of $F^c, B^c$, } \\
+&amp;\textit{and $\alpha_{i_x}, \alpha_{i_y}$ are the matte derivatives}
+\end{align}\]
+
+<ul>
+  <li>For a fixed $\alpha$, the cost function is quadratic, and its minimum may be found by solving a sparse set of linear equations</li>
+</ul>
+
+<h3 id="analysis">Analysis</h3>
+
+<h4 id="1-parameter-analysis">1. Parameter Analysis</h4>
+
+<ul>
+  <li>
+    <p>In this section we will mainly discuss the effects of regularization term and the window size</p>
+  </li>
+  <li>
+    <p><strong>1.1 Effect of regularization weight</strong></p>
+
+    <ul>
+      <li>$\epsilon$ is the weight of the regularization term on a in cost function. There are two reasons for having it:
+        <ul>
+          <li>Numerical stability</li>
+          <li>Minimizing the norm of a biases the solution toward smoother alpha mattes</li>
+        </ul>
+      </li>
+      <li>Use small $\epsilon$ value so that the sharpness of recovered matte matches the profile of the edge in the input image, but the matte also captures the image noise</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>1.2 Effect of window size</strong></p>
+    <ul>
+      <li>
+        <p>Using wider windows is more stable when the color line model holds, but the chance of encountering windows that deviate from the color line model grows when the windows are larger</p>
+      </li>
+      <li>
+        <p>Increase computation time since the resulting system is less sparse</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="reference">Reference</h3>
+<p><a href="http://www.wisdom.weizmann.ac.il/~levina/papers/Matting-Levin-Lischinski-Weiss-PAMI.pdf"><strong>[1]</strong></a>  A Closed-Form Solution to Natural Image Matting, Anat Levin, Dani Lischinski, and Yair Weiss, MIT, 2013 PAMI</p>
+
+<p><a href="http://cs.brown.edu/courses/cs129/results/final/valayshah/"><strong>[2]</strong></a> Natural Image Matting - Brown University CS129 Final Project</p>
+
+  </article>
+</div>
+
+      </div>
+    </div>
+    
+<div class="wrapper">
+  <div id="disqus_thread"></div>
+</div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = ''; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = ''; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+  </script>
+
+
+    
+<footer class="site-footer">
+    <div class="wrapper">
+        <h2 class="footer-heading"> Hexiang Hu</h2>
+    </div>
+</footer>
+
+
+    <div class="back-to-top">Top</div>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+    });
+    
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+});
+</script>
+
+  </body>
+  <!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60071442-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</html>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yen-Yu Chang</title>
+    <description>{&quot;en&quot;=&gt;&quot;This is an academic website for Yen-Yu Chang to share his experiences, projects, and publications.&quot;}</description>
+    <link>https://yuyuchang.github.io/</link>
+    <atom:link href="https://yuyuchang.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 10 Oct 2020 03:18:16 +0000</pubDate>
+    <lastBuildDate>Sat, 10 Oct 2020 03:18:16 +0000</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Graphics: Shading</title>
+        <description>&lt;p&gt;Shading refers to depicting depth perception in 3D models or illustrations by varying levels of darkness. In computer graphics, shading refers to the process of altering the color of an object in 3D scene, based on its angle to lights and its distance from lights to create a photorealistic effect.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
+        <link>https://hexiang-hu.github.io/graphics/2015/03/23/shading/</link>
+        <guid isPermaLink="true">https://hexiang-hu.github.io/graphics/2015/03/23/shading/</guid>
+        
+        
+        <category>graphics</category>
+        
+      </item>
+    
+      <item>
+        <title>Graphics: Understanding Local Reflectance Model</title>
+        <description>&lt;p&gt;Illumination and reflectance over objects makes image looks real, since light-material interaction in real world caused each point of the object have different colors and shades.This post is written to discuss some factors about illumination and reflectance models(global, local, etc.), and explore how computer graphic deals with illumination and reflectance of objects.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 22 Mar 2015 00:00:00 +0000</pubDate>
+        <link>https://hexiang-hu.github.io/graphics/2015/03/22/local-reflectance-model/</link>
+        <guid isPermaLink="true">https://hexiang-hu.github.io/graphics/2015/03/22/local-reflectance-model/</guid>
+        
+        
+        <category>graphics</category>
+        
+      </item>
+    
+      <item>
+        <title>Druid: A Real-time Analytical Data Store</title>
+        <description>&lt;p&gt;Druid is an open source data store designed for real-time exploratory analytics on large data sets. The system combines a column-oriented storage layout, a distributed, shared-nothing architecture, and an advanced indexing structure to allow for the arbitrary exploration of billion-row tables with sub-second latencies.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 15 Mar 2015 00:00:00 +0000</pubDate>
+        <link>https://hexiang-hu.github.io/big-data/2015/03/15/druid/</link>
+        <guid isPermaLink="true">https://hexiang-hu.github.io/big-data/2015/03/15/druid/</guid>
+        
+        
+        <category>big-data</category>
+        
+      </item>
+    
+      <item>
+        <title>Dynamo: Amazon's Highly Available Key value Store</title>
+        <description>&lt;p&gt;Dynamo is a highly available key-value storage system built by Amazon. It sacrifices a consistency under certain failure scenarios, makes extensive use of object versioning and application-assisted conflict resolution in a manner that provides a novel interface for developers to use.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 09 Mar 2015 00:00:00 +0000</pubDate>
+        <link>https://hexiang-hu.github.io/big-data/2015/03/09/dynamo/</link>
+        <guid isPermaLink="true">https://hexiang-hu.github.io/big-data/2015/03/09/dynamo/</guid>
+        
+        
+        <category>big-data</category>
+        
+      </item>
+    
+      <item>
+        <title>Terminal Configuration</title>
+        <description>&lt;p&gt;This Post is just used for keeping personal configuration files online&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 02 Mar 2015 00:00:00 +0000</pubDate>
+        <link>https://hexiang-hu.github.io/2015/03/02/terminal-configuration/</link>
+        <guid isPermaLink="true">https://hexiang-hu.github.io/2015/03/02/terminal-configuration/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Delay Scheduling: A Simple Technique for Achieving Locality and Fairness in Cluster Scheduling</title>
+        <description>&lt;p&gt;This is a paper motivated by the scheduling problem raised in traditional FIFO strategy in data-intensive cluster computing system.&lt;/p&gt;
+
+&lt;p&gt;The proposed methodology is designed to get a good tradeoff point between the conflicts of fairness and data locality, which practically improve response time for small jobs by 5x in a multi-user workload and double throughput in an IO-heavy workload.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 01 Mar 2015 00:00:00 +0000</pubDate>
+        <link>https://hexiang-hu.github.io/big-data/2015/03/01/delay-scheduling/</link>
+        <guid isPermaLink="true">https://hexiang-hu.github.io/big-data/2015/03/01/delay-scheduling/</guid>
+        
+        
+        <category>big-data</category>
+        
+      </item>
+    
+      <item>
+        <title>A Closed-From Solution to Natural Image Matting</title>
+        <description>&lt;p&gt;This article is a summary for PAMI 2013 paper - A closed-form solution to natural image matting.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 25 Feb 2015 00:00:00 +0000</pubDate>
+        <link>https://hexiang-hu.github.io/vision/2015/02/25/closed-form-image-matting/</link>
+        <guid isPermaLink="true">https://hexiang-hu.github.io/vision/2015/02/25/closed-form-image-matting/</guid>
+        
+        
+        <category>vision</category>
+        
+      </item>
+    
+      <item>
+        <title>Spark : Resilient Distributed Dataset for efficient in memory computing</title>
+        <description>&lt;p&gt;This article is basically a high level summary for a 3 minutes presentation that lead the audience to have a intuition about what Spark is and how it achieve efficient and fault-tolerant in-memory computing.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 23 Feb 2015 00:00:00 +0000</pubDate>
+        <link>https://hexiang-hu.github.io/big-data/2015/02/23/spark/</link>
+        <guid isPermaLink="true">https://hexiang-hu.github.io/big-data/2015/02/23/spark/</guid>
+        
+        
+        <category>big-data</category>
+        
+      </item>
+    
+  </channel>
+</rss>

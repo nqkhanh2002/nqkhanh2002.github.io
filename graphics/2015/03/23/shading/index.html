@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Graphics: Shading</title>
+  <meta name="description" lang="en" content="Shading refers to depicting depth perception in 3D models or illustrations by varying levels of darkness. In computer graphics, shading refers to the process...">
+  <meta name="description" lang="cn" content="Shading refers to depicting depth perception in 3D models or illustrations by varying levels of darkness. In computer graphics, shading refers to the process...">
+  <meta name="keywords" lang="en" content="Hexiang Hu,Publications,Posts,Research,Deep Learning,Computer Vision,Natural Language Processing" />
+  <meta name="keywords" lang="cn" content="胡鹤翔,学术论文,博客,研究,深度学习,计算机视觉,自然语言处理" />
+  
+  
+    <meta name="description" content="Shading refers to depicting depth perception in 3D models or illustrations by varying levels of darkness. In computer graphics, shading refers to the process of altering the color of an object in 3D scene, based on its angle to lights and its distance from lights to create a photorealistic effect.">
+  
+
+  <link rel="shortcut icon" href="/images/favicon.svg">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://hexiang-hu.github.io/graphics/2015/03/23/shading/">
+  <link rel="alternate" type="application/rss+xml" title="Hexiang Hu" href="https://hexiang-hu.github.io/feed.xml" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="/js/jquery-2.1.3.min.js"> </script>
+
+  <!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+</script>
+<![endif]-->
+
+
+
+</head>
+
+
+  <body>
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K5ZTMW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K5ZTMW');</script>
+<!-- End Google Tag Manager -->
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" href="/">Hexiang Hu</a>
+<nav class="site-nav">
+  <a href="#" class="menu-icon">
+    <svg viewBox="0 0 18 15">
+      <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+    </svg>
+  </a>
+
+  <div class="trigger">
+    <a class="page-link" href="/">Home</a>
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+        
+        <a class="page-link" href="/posts/">Posts</a>
+        
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+        
+        
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+  </div>
+</nav>
+
+  </div>
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Graphics: Shading</h1>
+    <p class="post-meta">Mar 23, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>Shading refers to depicting depth perception in 3D models or illustrations by varying levels of darkness. In computer graphics, shading refers to the process of altering the color of an object in 3D scene, based on its angle to lights and its distance from lights to create a photorealistic effect.</p>
+
+<!--more-->
+
+<hr class="soft" />
+
+<h3 class="text-center" id="shading-in-computer-graphics">Shading in Computer Graphics</h3>
+
+<ul>
+  <li>Shading of flat polygons
+    <ul>
+      <li>Flat shading
+        <ul>
+          <li>compute illumination once per polygon and apply it to whole polygon or take color of first vertex</li>
+        </ul>
+      </li>
+      <li>Gouraud shading
+        <ul>
+          <li>compute illumination at boundary and interpolate over the interior</li>
+        </ul>
+      </li>
+      <li>Accurate shading
+        <ul>
+          <li>compute illumination at every point of the polygon</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Flat shading
+    <ul>
+      <li>Intensity discontinuity across edge</li>
+      <li>If there are very large number of very small polygons, the faceting effects is not obvious</li>
+    </ul>
+  </li>
+  <li><strong>Gouraud shading</strong>
+    <ul>
+      <li>Interpolative
+        <ul>
+          <li>Given colors of the polygn vertices, interior points are colored through bilinear interpolation</li>
+        </ul>
+      </li>
+      <li>Vertex normals vs. Face Normals
+        <ul>
+          <li>Use the actual surface’s normal at each vertex, when the surface is not analytically defined, take the average normal of all neighboring faces</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p><img src="/images/posts/2015-03-23-color-interpolation.png" alt="alt &quot;color interpolation&quot;" height="250px" /></p>
+
+    <ul>
+      <li>Advantages
+        <ul>
+          <li><strong>“Color computation only at vertices”</strong>
+            <ul>
+              <li>illumination mode evaluation at vertex shader</li>
+              <li>Simple interpolation at fragment shader</li>
+            </ul>
+          </li>
+          <li>Fast and easy</li>
+        </ul>
+      </li>
+      <li>Disadvantages
+        <ul>
+          <li><strong>“Color computation only at vertices”</strong></li>
+          <li>Does not simulate the</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Phong Shading</strong>
+    <ul>
+      <li>Basic idea
+        <ul>
+          <li>Interpolate surface normals</li>
+          <li>Compute color at each pixel from interpolated normals</li>
+          <li>Illumination model used at Fragment Shader</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Further Problem No.1 - Polygonal silhouette
+    <ul>
+      <li>Subdivide further
+        <ul>
+          <li>Refinement only near silhouette</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Further Problem No.2 - Orientation dependence
+    <ul>
+      <li>Note first that bilinear interpolation is done along horizontal scanlines</li>
+      <li>When orientation of the same polygon changes, the same point p may be colored differently</li>
+      <li>Solved by triangulate</li>
+    </ul>
+  </li>
+  <li>Further Problem No.3 - Unrepresentative normal
+    <ul>
+      <li>Solved by subdivide surface</li>
+    </ul>
+  </li>
+</ul>
+
+  </article>
+</div>
+
+      </div>
+    </div>
+    
+<div class="wrapper">
+  <div id="disqus_thread"></div>
+</div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = ''; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = ''; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+  </script>
+
+
+    
+<footer class="site-footer">
+    <div class="wrapper">
+        <h2 class="footer-heading"> Hexiang Hu</h2>
+    </div>
+</footer>
+
+
+    <div class="back-to-top">Top</div>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+    });
+    
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+});
+</script>
+
+  </body>
+  <!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60071442-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</html>

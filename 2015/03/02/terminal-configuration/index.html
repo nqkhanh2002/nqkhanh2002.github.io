@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Terminal Configuration</title>
+  <meta name="description" lang="en" content="This Post is just used for keeping personal configuration files online">
+  <meta name="description" lang="cn" content="This Post is just used for keeping personal configuration files online">
+  <meta name="keywords" lang="en" content="Hexiang Hu,Publications,Posts,Research,Deep Learning,Computer Vision,Natural Language Processing" />
+  <meta name="keywords" lang="cn" content="胡鹤翔,学术论文,博客,研究,深度学习,计算机视觉,自然语言处理" />
+  
+  
+
+  <link rel="shortcut icon" href="/images/favicon.svg">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://hexiang-hu.github.io/2015/03/02/terminal-configuration/">
+  <link rel="alternate" type="application/rss+xml" title="Hexiang Hu" href="https://hexiang-hu.github.io/feed.xml" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="/js/jquery-2.1.3.min.js"> </script>
+
+  <!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+</script>
+<![endif]-->
+
+
+
+</head>
+
+
+  <body>
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K5ZTMW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K5ZTMW');</script>
+<!-- End Google Tag Manager -->
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" href="/">Hexiang Hu</a>
+<nav class="site-nav">
+  <a href="#" class="menu-icon">
+    <svg viewBox="0 0 18 15">
+      <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+    </svg>
+  </a>
+
+  <div class="trigger">
+    <a class="page-link" href="/">Home</a>
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+        
+        <a class="page-link" href="/posts/">Posts</a>
+        
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+      <!-- Button for Posts -->
+      
+        
+        
+      
+
+    
+      <!-- Button for Posts -->
+      
+
+    
+  </div>
+</nav>
+
+  </div>
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Terminal Configuration</h1>
+    <p class="post-meta">Mar 2, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>This Post is just used for keeping personal configuration files online</p>
+
+<!--more-->
+
+<ul>
+  <li>Git Configuration for BEAUTIFUL Log</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">[</span><span class="nb">alias</span><span class="o">]</span>
+    lg1 <span class="o">=</span> log <span class="nt">--graph</span> <span class="nt">--abbrev-commit</span> <span class="nt">--decorate</span> <span class="nt">--date</span><span class="o">=</span>relative <span class="nt">--format</span><span class="o">=</span>format:<span class="s1">'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold red)%d%C(reset)'</span> <span class="nt">--all</span>
+    lg2 <span class="o">=</span> log <span class="nt">--graph</span> <span class="nt">--abbrev-commit</span> <span class="nt">--decorate</span> <span class="nt">--format</span><span class="o">=</span>format:<span class="s1">'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'</span> <span class="nt">--all</span>
+    lg <span class="o">=</span> <span class="o">!</span><span class="s2">"git lg2"</span></code></pre></figure>
+
+<ul>
+  <li>Vim Configuration</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="s2">" Copy Right Reserved By Amir Salihefendic
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""</span>
+<span class="s2">" =&gt; General
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""</span>
+<span class="s2">" Sets how many lines of history VIM has to remember
+set history=700
+
+"</span> Enable filetype plugins
+filetype plugin on
+filetype indent on
+
+<span class="s2">" Set to auto read when a file is changed from the outside
+set autoread
+
+"</span> With a map leader it<span class="s1">'s possible to do extra key combinations
+" like &lt;leader&gt;w saves the current file
+let mapleader = ","
+let g:mapleader = ","
+
+" Fast saving
+nmap &lt;leader&gt;w :w!&lt;cr&gt;
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" =&gt; VIM user interface
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set 7 lines to the cursor - when moving vertically using j/k
+set so=7
+
+" Turn on the WiLd menu
+set wildmenu
+
+" Ignore compiled files
+set wildignore=*.o,*~,*.pyc
+
+"Always show current position
+set ruler
+
+" Height of the command bar
+set cmdheight=2
+
+" A buffer becomes hidden when it is abandoned
+set hid
+
+" Configure backspace so it acts as it should act
+set backspace=eol,start,indent
+set whichwrap+=&lt;,&gt;,h,l
+
+" Ignore case when searching
+set ignorecase
+
+" When searching try to be smart about cases
+set smartcase
+
+" Highlight search results
+set hlsearch
+
+" Makes search act like search in modern browsers
+set incsearch
+
+" Don'</span>t redraw <span class="k">while </span>executing macros <span class="o">(</span>good performance config<span class="o">)</span>
+<span class="nb">set </span>lazyredraw
+
+<span class="s2">" For regular expressions turn magic on
+set magic
+
+"</span> Show matching brackets when text indicator is over them
+<span class="nb">set </span>showmatch
+<span class="s2">" How many tenths of a second to blink when matching brackets
+set mat=2
+
+"</span> No annoying sound on errors
+<span class="nb">set </span>noerrorbells
+<span class="nb">set </span>novisualbell
+<span class="nb">set </span><span class="nv">t_vb</span><span class="o">=</span>
+<span class="nb">set </span><span class="nv">tm</span><span class="o">=</span>500
+
+
+<span class="s2">"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"</span> <span class="o">=&gt;</span> Colors and Fonts
+<span class="s2">"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"</span> Enable syntax highlighting
+syntax <span class="nb">enable
+
+</span>colorscheme desert
+<span class="nb">set </span><span class="nv">background</span><span class="o">=</span>dark
+
+<span class="s2">" Set extra options when running in GUI mode
+if has("</span>gui_running<span class="s2">")
+    set guioptions-=T
+    set guioptions+=e
+    set t_Co=256
+    set guitablabel=%M</span><span class="se">\ </span><span class="s2">%t
+endif
+
+"</span> Set utf8 as standard encoding and en_US as the standard language
+<span class="nb">set </span><span class="nv">encoding</span><span class="o">=</span>utf8
+
+<span class="s2">" Use Unix as the standard file type
+set ffs=unix,dos,mac
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""</span>
+<span class="s2">" =&gt; Files, backups and undo
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""</span>
+<span class="s2">" Turn backup off, since most stuff is in SVN, git et.c anyway...
+set nobackup
+set nowb
+set noswapfile
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""</span>
+<span class="s2">" =&gt; Text, tab and indent related
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""</span>
+<span class="s2">" Use spaces instead of tabs
+set expandtab
+
+"</span> Be smart when using tabs <span class="p">;</span><span class="o">)</span>
+<span class="nb">set </span>smarttab
+
+<span class="s2">" 1 tab == 4 spaces
+set shiftwidth=4
+set tabstop=4
+
+"</span> Linebreak on 500 characters
+<span class="nb">set </span>lbr
+<span class="nb">set </span><span class="nv">tw</span><span class="o">=</span>500
+
+<span class="nb">set </span>ai <span class="s2">"Auto indent
+set si "</span>Smart indent
+<span class="nb">set </span>wrap <span class="s2">"Wrap lines
+
+
+""""""""""""""""""""""""""""""
+"</span> <span class="o">=&gt;</span> Visual mode related
+<span class="s2">""""""""""""""""""""""""""""""</span>
+<span class="s2">" Visual mode pressing * or # searches for the current selection
+"</span> Super useful! From an idea by Michael Naumann
+vnoremap &lt;silent&gt; <span class="k">*</span> :call VisualSelection<span class="o">(</span><span class="s1">'f'</span><span class="o">)</span>&lt;CR&gt;
+vnoremap &lt;silent&gt; <span class="c"># :call VisualSelection('b')&lt;CR&gt;</span>
+
+
+<span class="s2">"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"</span> <span class="o">=&gt;</span> Moving around, tabs, windows and buffers
+<span class="s2">"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"</span> Treat long lines as <span class="nb">break </span>lines <span class="o">(</span>useful when moving around <span class="k">in </span>them<span class="o">)</span>
+map j gj
+map k gk
+
+<span class="s2">" Map &lt;Space&gt; to / (search) and Ctrl-&lt;Space&gt; to ? (backwards search)
+map &lt;space&gt; /
+map &lt;c-space&gt; ?
+
+"</span> Disable highlight when &lt;leader&gt;&lt;cr&gt; is pressed
+map &lt;silent&gt; &lt;leader&gt;&lt;cr&gt; :noh&lt;cr&gt;
+
+<span class="s2">" Smart way to move between windows
+map &lt;C-j&gt; &lt;C-W&gt;j
+map &lt;C-k&gt; &lt;C-W&gt;k
+map &lt;C-h&gt; &lt;C-W&gt;h
+map &lt;C-l&gt; &lt;C-W&gt;l
+
+"</span> Close the current buffer
+map &lt;leader&gt;bd :Bclose&lt;cr&gt;
+
+<span class="s2">" Close all the buffers
+map &lt;leader&gt;ba :1,1000 bd!&lt;cr&gt;
+
+"</span> Useful mappings <span class="k">for </span>managing tabs
+map &lt;leader&gt;tn :tabnew&lt;cr&gt;
+map &lt;leader&gt;to :tabonly&lt;cr&gt;
+map &lt;leader&gt;tc :tabclose&lt;cr&gt;
+map &lt;leader&gt;tm :tabmove
+
+<span class="s2">" Opens a new tab with the current buffer's path
+"</span> Super useful when editing files <span class="k">in </span>the same directory
+map &lt;leader&gt;te :tabedit &lt;c-r&gt;<span class="o">=</span><span class="nb">expand</span><span class="o">(</span><span class="s2">"%:p:h"</span><span class="o">)</span>&lt;cr&gt;/
+
+<span class="s2">" Switch CWD to the directory of the open buffer
+map &lt;leader&gt;cd :cd %:p:h&lt;cr&gt;:pwd&lt;cr&gt;
+
+"</span> Specify the behavior when switching between buffers
+try
+  <span class="nb">set </span><span class="nv">switchbuf</span><span class="o">=</span>useopen,usetab,newtab
+  <span class="nb">set </span><span class="nv">stal</span><span class="o">=</span>2
+catch
+endtry
+
+<span class="s2">" Return to last edit position when opening files (You want this!)
+autocmd BufReadPost *
+     </span><span class="se">\ </span><span class="s2">if line("</span><span class="s1">'\"") &gt; 0 &amp;&amp; line("'</span><span class="se">\"</span><span class="s2">") &lt;= line("$") |
+     </span><span class="se">\ </span><span class="s2">  exe "</span>normal! g<span class="sb">`</span><span class="se">\"</span><span class="s2">" |
+     </span><span class="se">\ </span><span class="s2">endif
+"</span> Remember info about open buffers on close
+<span class="nb">set </span>viminfo^<span class="o">=</span>%
+
+
+<span class="s2">""""""""""""""""""""""""""""""</span>
+<span class="s2">" =&gt; Status line
+""""""""""""""""""""""""""""""
+"</span> Always show the status line
+<span class="nb">set </span><span class="nv">laststatus</span><span class="o">=</span>2
+
+<span class="s2">" Format the status line
+set statusline=</span><span class="se">\ </span><span class="s2">%{HasPaste()}%F%m%r%h</span><span class="se">\ </span><span class="s2">%w</span><span class="se">\ \ </span><span class="s2">CWD:</span><span class="se">\ </span><span class="s2">%r%{getcwd()}%h</span><span class="se">\ \ \ </span><span class="s2">Line:</span><span class="se">\ </span><span class="s2">%l
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""</span>
+<span class="s2">" =&gt; Editing mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""</span>
+<span class="s2">" Remap VIM 0 to first non-blank character
+map 0 ^
+
+"</span> Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
+nmap &lt;M-j&gt; mz:m+&lt;cr&gt;<span class="sb">`</span>z
+nmap &lt;M-k&gt; mz:m-2&lt;cr&gt;<span class="sb">`</span>z
+vmap &lt;M-j&gt; :m<span class="s1">'&gt;+&lt;cr&gt;`&lt;my`&gt;mzgv`yo`z
+vmap &lt;M-k&gt; :m'</span>&lt;<span class="nt">-2</span>&lt;cr&gt;<span class="sb">`</span><span class="o">&gt;</span>my<span class="sb">`</span>&lt;mzgv<span class="sb">`</span>yo<span class="sb">`</span>z
+
+<span class="k">if </span>has<span class="o">(</span><span class="s2">"mac"</span><span class="o">)</span> <span class="o">||</span> has<span class="o">(</span><span class="s2">"macunix"</span><span class="o">)</span>
+  nmap &lt;D-j&gt; &lt;M-j&gt;
+  nmap &lt;D-k&gt; &lt;M-k&gt;
+  vmap &lt;D-j&gt; &lt;M-j&gt;
+  vmap &lt;D-k&gt; &lt;M-k&gt;
+endif
+
+<span class="s2">" Delete trailing white space on save, useful for Python and CoffeeScript ;)
+func! DeleteTrailingWS()
+  exe "</span>normal mz<span class="s2">"
+  %s/</span><span class="se">\s\+</span><span class="nv">$/</span><span class="s2">/ge
+  exe "</span>normal <span class="sb">`</span>z<span class="s2">"
+endfunc
+autocmd BufWrite *.py :call DeleteTrailingWS()
+autocmd BufWrite *.coffee :call DeleteTrailingWS()
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""</span>
+<span class="s2">" =&gt; vimgrep searching and cope displaying
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""</span>
+<span class="s2">" When you press gv you vimgrep after the selected text
+vnoremap &lt;silent&gt; gv :call VisualSelection('gv')&lt;CR&gt;
+
+"</span> Open vimgrep and put the cursor <span class="k">in </span>the right position
+map &lt;leader&gt;g :vimgrep // <span class="k">**</span>/<span class="k">*</span>.&lt;left&gt;&lt;left&gt;&lt;left&gt;&lt;left&gt;&lt;left&gt;&lt;left&gt;&lt;left&gt;
+
+<span class="s2">" Vimgreps in the current file
+map &lt;leader&gt;&lt;space&gt; :vimgrep // &lt;C-R&gt;%&lt;C-A&gt;&lt;right&gt;&lt;right&gt;&lt;right&gt;&lt;right&gt;&lt;right&gt;&lt;right&gt;&lt;right&gt;&lt;right&gt;&lt;right&gt;
+
+"</span> When you press &lt;leader&gt;r you can search and replace the selected text
+vnoremap &lt;silent&gt; &lt;leader&gt;r :call VisualSelection<span class="o">(</span><span class="s1">'replace'</span><span class="o">)</span>&lt;CR&gt;
+
+<span class="s2">" Do :help cope if you are unsure what cope is. It's super useful!
+"</span>
+<span class="s2">" When you search with vimgrep, display your results in cope by doing:
+"</span>   &lt;leader&gt;cc
+<span class="s2">"
+"</span> To go to the next search result <span class="k">do</span>:
+<span class="s2">"   &lt;leader&gt;n
+"</span>
+<span class="s2">" To go to the previous search results do:
+"</span>   &lt;leader&gt;p
+<span class="s2">"
+map &lt;leader&gt;cc :botright cope&lt;cr&gt;
+map &lt;leader&gt;co ggVGy:tabnew&lt;cr&gt;:set syntax=qf&lt;cr&gt;pgg
+map &lt;leader&gt;n :cn&lt;cr&gt;
+map &lt;leader&gt;p :cp&lt;cr&gt;
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""</span>
+<span class="s2">" =&gt; Spell checking
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""</span>
+<span class="s2">" Pressing ,ss will toggle and untoggle spell checking
+map &lt;leader&gt;ss :setlocal spell!&lt;cr&gt;
+
+"</span> Shortcuts using &lt;leader&gt;
+map &lt;leader&gt;sn <span class="o">]</span>s
+map &lt;leader&gt;sp <span class="o">[</span>s
+map &lt;leader&gt;sa zg
+map &lt;leader&gt;s? <span class="nv">z</span><span class="o">=</span>
+
+
+<span class="s2">"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"</span> <span class="o">=&gt;</span> Misc
+<span class="s2">"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"</span> Remove the Windows ^M - when the encodings gets messed up
+noremap &lt;Leader&gt;m mmHmt:%s/&lt;C-V&gt;&lt;cr&gt;//ge&lt;cr&gt;<span class="s1">'tzt'</span>m
+
+<span class="s2">" Quickly open a buffer for scripbble
+map &lt;leader&gt;q :e ~/buffer&lt;cr&gt;
+
+"</span> Toggle <span class="nb">paste </span>mode on and off
+map &lt;leader&gt;pp :setlocal <span class="nb">paste</span><span class="o">!</span>&lt;cr&gt;
+
+
+
+<span class="s2">"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"</span> <span class="o">=&gt;</span> Helper functions
+<span class="s2">"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! CmdLine(str)
+    exe "</span>menu Foo.Bar :<span class="s2">" . a:str
+    emenu Foo.Bar
+    unmenu Foo
+endfunction
+
+function! VisualSelection(direction) range
+    let l:saved_reg = @"</span>
+    execute <span class="s2">"normal! vgvy"</span>
+
+    <span class="nb">let </span>l:pattern <span class="o">=</span> escape<span class="o">(</span>@<span class="s2">", '</span><span class="se">\\</span><span class="s2">/.*</span><span class="nv">$^</span><span class="s2">~[]')
+    let l:pattern = substitute(l:pattern, "</span><span class="se">\n</span><span class="s2">$", "", "")
+
+    if a:direction == 'b'
+        execute "</span>normal ?<span class="s2">" . l:pattern . "</span>^M<span class="s2">"
+    elseif a:direction == 'gv'
+        call CmdLine("</span>vimgrep <span class="s2">" . '/'. l:pattern . '/' . ' **/*.')
+    elseif a:direction == 'replace'
+        call CmdLine("</span>%s<span class="s2">" . '/'. l:pattern . '/')
+    elseif a:direction == 'f'
+        execute "</span>normal /<span class="s2">" . l:pattern . "</span>^M<span class="s2">"
+    endif
+
+    let @/ = l:pattern
+    let @"</span> <span class="o">=</span> l:saved_reg
+endfunction
+
+
+<span class="s2">" Returns true if paste mode is enabled
+function! HasPaste()
+    if &amp;paste
+        return 'PASTE MODE  '
+    en
+    return ''
+endfunction
+
+"</span> Don<span class="s1">'t close window, when deleting a buffer
+command! Bclose call &lt;SID&gt;BufcloseCloseIt()
+function! &lt;SID&gt;BufcloseCloseIt()
+   let l:currentBufNum = bufnr("%")
+   let l:alternateBufNum = bufnr("#")
+
+   if buflisted(l:alternateBufNum)
+     buffer #
+   else
+     bnext
+   endif
+
+   if bufnr("%") == l:currentBufNum
+     new
+   endif
+
+   if buflisted(l:currentBufNum)
+     execute("bdelete! ".l:currentBufNum)
+   endif
+endfunction</span></code></pre></figure>
+
+
+  </article>
+</div>
+
+      </div>
+    </div>
+    
+
+    
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">
+      <a class="page-link" href="https://hexiang-hu.github.io/about">
+      About Hexiang Hu
+    </a></h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Hexiang (Frank) Hu</li>
+          <li><a href="mailto:">hexiang.frank.hu [at] gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        
+<a href="https://twitter.com/Hexiang_Hu">
+  <img src="/images/icon/color-twitter.png" class="social-icon">
+</a>
+
+
+
+<a href="https://linkedin.com/in/{{hexianghu">
+  <img src="/images/icon/color-linkedin.png" class="social-icon">
+</a>
+
+
+
+<a href="https://github.com/Hexiang-Hu">
+  <img src="/images/icon/color-github.png" class="social-icon">
+</a>
+
+
+
+<a href="https://facebook.com/Hu.Hexiang">
+  <img src="/images/icon/color-facebook.png" class="social-icon">
+</a>
+
+
+
+<a href="/feed.xml">
+  <img src="/images/icon/color-rss.png" class="social-icon">
+</a>
+
+
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">This is an academic website for Hexiang Hu to share his experiences, projects, publications and tech/non-tech posts</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+    <div class="back-to-top">Top</div>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+    });
+    
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+});
+</script>
+
+  </body>
+  <!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60071442-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</html>
