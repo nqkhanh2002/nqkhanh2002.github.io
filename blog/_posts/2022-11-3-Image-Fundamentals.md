@@ -18,9 +18,9 @@ Normally, a pixel is considered the “color” or the “intensity” (cường
 place in our image. If we think of an image as a grid, each square contains a single pixel. For
 example, take a look at Figure 3.1.
 
-<!-- <img title="a title" alt="Alt text" src="{{ site.baseurl }}blog/images/lesson2/figure31.png"> -->
+<!-- <img title="a title" alt="Alt text" src="{{ site.baseurl }}/images/lesson2/figure31.png"> -->
 
-{% include image.html url="blog\images\lesson2\figure31.png" description="Figure 3.1: This image is 1.000 pixels wide and 750 pixels tall, for a total of 1.000×750 = 750.000 total pixels" %}
+{% include image.html url="\images\lesson2\figure31.png" description="Figure 3.1: This image is 1.000 pixels wide and 750 pixels tall, for a total of 1.000×750 = 750.000 total pixels" %}
 
 The image in Figure 3.1 above has a resolution of 1.000×750, meaning that it is 1.000 pixels
 wide and 750 pixels tall. We can conceptualize an image as a (multidimensional) matrix. In this
@@ -60,7 +60,7 @@ RGB color space is an example of an additive color space: the more of each color
 brighter the pixel becomes and closer to white. We can visualize the RGB color space in Figure 3.3
 (left). As you can see, adding red and green leads to yellow. Adding red and blue yields pink. And adding all three red, green, and blue together, we create white.
 
-{% include image.html url="blog\images\lesson2\figure32.png" description="Figure 3.2: Left: The RGB color space is additive. The more red, green and blue you mix together,
+{% include image.html url="\images\lesson2\figure32.png" description="Figure 3.2: Left: The RGB color space is additive. The more red, green and blue you mix together,
 the closer you get to white. Right: The RGB cube." %}
 
 To make this example more concrete, let’s again consider the color “white” – we would fill each
@@ -88,7 +88,7 @@ independent matrices of width W and height H, one for each of the RGB components
 Figure 3.5. We can combine these three matrices to obtain a multi-dimensional array with shape
 W × H × D where D is the depth or number of channels (for the RGB color space, D=3):
 
-{% include image.html url="blog\images\lesson2\figure33.png" description="Figure 3.3: Representing an image in the RGB color space where each channel is an independent
+{% include image.html url="\images\lesson2\figure33.png" description="Figure 3.3: Representing an image in the RGB color space where each channel is an independent
 matrix, that when combined, forms the final image" %}
 
 Keep in mind that the depth of an image is very different than the depth of a neural network
@@ -106,7 +106,7 @@ make this point more clear, imagine our grid as a piece of graph paper. Using th
 origin point (0;0) corresponds to the upper-left corner of the image. As we move down and to the
 right, both the x and y values increase.
 
-{% include image.html url="blog\images\lesson2\figure34.png" description="Figure 3.4: The letter “I” placed on a piece of graph paper. Pixels are accessed by their (x;y)-
+{% include image.html url="\images\lesson2\figure34.png" description="Figure 3.4: The letter “I” placed on a piece of graph paper. Pixels are accessed by their (x;y)-
 coordinates, where we go x columns to the right and y rows down, keeping in mind that Python is
 zero-indexed." %}
 
@@ -181,7 +181,7 @@ Scaling, or simply resizing, is the process of increasing or decreasing the size
 of width and height. When resizing an image, it’s important to keep in mind the aspect ratio, which is the ratio of the width to the height of the image. Ignoring the aspect ratio can lead to images that
 look compressed and distorted, as in Figure 3.5.
 
-{% include image.html url="blog\images\lesson2\figure35.png" description="Figure 3.5: Left: Original image. Top and Bottom: Resulting distorted images after resizing without preserving the aspect ratio (i.e., the ratio of the width to the height of the image)" %}
+{% include image.html url="\images\lesson2\figure35.png" description="Figure 3.5: Left: Original image. Top and Bottom: Resulting distorted images after resizing without preserving the aspect ratio (i.e., the ratio of the width to the height of the image)" %}
 
 On the left, we have the original image. And on the top and bottom, we have two images that
 have been distorted by not preserving the aspect ratio. The end result is that these images are

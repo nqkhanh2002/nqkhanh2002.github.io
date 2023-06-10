@@ -7,8 +7,8 @@ author: Nguyen Quoc Khanh
 
 <br>
 
-<!-- {% include image.html url="blog\images\post10\intro.jpg" description="" %} -->
-{% include image.html url="blog\images\post11\intro.png" description="" %}
+<!-- {% include image.html url="\images\post10\intro.jpg" description="" %} -->
+{% include image.html url="\images\post11\intro.png" description="" %}
 
 
 

@@ -29,7 +29,7 @@ Những hình ảnh ban đầu được tạo ra bởi các nhân viên Cục đ
 
 MNIST đã được sử dụng rộng rãi và công nghệ nhận dạng hình ảnh đã được cải thiện rất nhiều nên tập dữ liệu được coi là quá dễ dàng. Đây là lý do tại sao tập dữ liệu Fashion-MNIST được tạo ra.
 
-{% include image.html url="blog\images\datasets\mnist-dataset.png" description="Mnist dataset" %}
+{% include image.html url="\images\datasets\mnist-dataset.png" description="Mnist dataset" %}
 
 
 

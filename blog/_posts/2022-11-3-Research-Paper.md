@@ -7,7 +7,7 @@ author: Nguyen Quoc Khanh
 
 <br>
 
-{% include image.html url="blog/images/paper/research.jpg" description="" %}
+{% include image.html url="/images/paper/research.jpg" description="" %}
 
 # 1. Review Paper
 ## 1.1 Tìm kiếm paper
@@ -82,7 +82,7 @@ Trong đó những mục mình đánh dấu (*) là những mục quan trọng l
 
 Mỗi một topic có trong Machine Learning hay Deep Learning đều có một số lượng paper rất lớn và số lượng này tăng một cách nhanh chóng mỗi năm cho nên việc đọc hết các paper trong một topic được coi là bất khả thi !?
 
-{% include image.html url="blog/images/paper/numberpaper.png" description="Số lượng paper được submit tại một số hội nghị nổi tiếng những năm gần đây." %}
+{% include image.html url="/images/paper/numberpaper.png" description="Số lượng paper được submit tại một số hội nghị nổi tiếng những năm gần đây." %}
 
 
 Không những thế, đọc paper một cách vô tội vạ có thể khiến chúng ta bị loãng kiến thức, xa rời đi khỏi topic mà chúng ta đang nghiên cứu và tệ hơn còn có những paper thâm chí không đem lại cho ta tri thức mà ngược lại khi đọc nó còn khiến chúng ta hiểu sai bản chất, lệch lạc trong lối suy nghĩ. Điều này đặc biệt thường xuyên xảy ra với những người mới học Machine Learning hay Deep Learning, họ sẵn sàng bỏ cả ngày trời để đọc một paper mà họ vớ được trên mạng internet mà thậm chí không cần biết nó có thật sự hữu ích cho họ không. Việc này khiến công sức và thời gian bị lãng phí rất nhiều. Từ đây chúng ta có thể rút ra được sai lầm đầu tiên. Thiếu kinh nghiệm hoặc không biết trích lọc các paper để đọc
@@ -99,11 +99,11 @@ Thường thì các paper trong một topic nào đó sẽ được phân loại
   
 Nói đến đây chắc các bạn cũng đoán được rằng chúng ta nên chọn những paper nào để đọc rồi đúng không. Trước hết bạn hãy cố gắng tìm đọc các **groundbreaking papers,** bạn có thể search google xem một paper có phải là **groundbreaking papers** hay không thông qua việc xem thông tin về tác giả, nếu tác giả là kỹ sư đến từ những công ty công nghệ hoặc các trường đại học hàng đầu thế giới như Google, Facebook, Microsoft hay Standford, ... hoặc đã từng là tác giả của một top paper khác, thì có khả năng đó là một top paper.
 
-{% include image.html url="blog/images/paper/resnet_paper.png" description="Resnet - một trong những top paper nổi tiếng của Deep Learning." %}
+{% include image.html url="/images/paper/resnet_paper.png" description="Resnet - một trong những top paper nổi tiếng của Deep Learning." %}
 
 Hoặc kiểm tra số lượng trích dẫn, nếu paper đó có số lượng trích dẫn lớn, thì nhiều khả năng nó cũng là một top paper (đương nhiên con số trích dẫn cũng chỉ mang tính tương đối, vì các top paper được công bố nhiều năm trước có thể sẽ có số lượng trích dẫn chênh lệch rất nhiều so với một top paper được công bố trong những năm gần đây) hoặc nếu đã có kinh nghiệm đọc thì tốt hơn hết là bạn có thể vào và đọc lướt qua nội dung của paper đó rồi đánh giá cũng được.
 
-{% include image.html url="blog/images/paper/trichdan.png" description="Số lượng trích dẫn khủng khiếp của Resnet." %}
+{% include image.html url="/images/paper/trichdan.png" description="Số lượng trích dẫn khủng khiếp của Resnet." %}
 
 Trong nhiều trường hợp, nếu bạn không thể tìm được một top paper trong topic bạn đang tìm hiểu, thì vẫn sẽ là ổn nếu bạn bắt đầu từ một copycat paper, sau khi đọc một lượt hay cố gắng kiểm tra các trích dẫn có trong paper, có khả năng sẽ có top paper được trích dẫn trong copycat paper bạn đang đọc đó.
 

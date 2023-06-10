@@ -35,7 +35,7 @@ For example, let’s assume that our set of possible categories includes:
 
 Then we present the following image (Figure 4.1) to our classification system:
 
-{% include image.html url="blog\images\less3\figure41.png" description="Figure 4.1: The goal of an image classification system is to take an input image and assign a label
+{% include image.html url="\images\less3\figure41.png" description="Figure 4.1: The goal of an image classification system is to take an input image and assign a label
 based on a pre-defined set of categories."%}
 
 Our goal here is to take this input image and assign a label to it from our categories set – in
@@ -129,7 +129,7 @@ only to evaluate your network.
 Common split sizes for training and testing sets include 66:6%33:3%, 75%=25%, and 90%=10%,
 respectively. 
 
-{% include image.html url="blog\images\less3\figure42.png" description="Figure 4.2: Examples of common training and testing data splits."%}
+{% include image.html url="\images\less3\figure42.png" description="Figure 4.2: Examples of common training and testing data splits."%}
 
 These data splits make sense, but what if you have parameters to tune? Neural networks have
 a number of knobs and levers (ex., learning rate, decay, regularization, etc.) that need to be tuned and dialed to obtain optimal performance. We’ll call these types of parameters hyperparameters,
