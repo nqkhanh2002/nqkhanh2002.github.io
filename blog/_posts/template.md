@@ -6,7 +6,7 @@ author: Nguyen Quoc Khanh
 ---
 
 <br>
-{% include image.html url="\images\ielts\basicielts.png" description="" %}
+{% include image.html url="blog\images\ielts\basicielts.png" description="" %}
 
 # 1.
 ## 1.1.

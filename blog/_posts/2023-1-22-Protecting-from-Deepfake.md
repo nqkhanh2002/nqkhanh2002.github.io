@@ -15,7 +15,7 @@ author: Nguyen Quoc Khanh
 >
 > <a href="https://openaccess.thecvf.com/content/CVPR2022/html/Dong_Protecting_Celebrities_From_DeepFake_With_Identity_Consistency_Transformer_CVPR_2022_paper.html" target="_blank">Link cVPR 2022</a>
 
-{% include image.html url="/images/paper/ict.png" description="Illustrating the (a) training phase and (b) testing phase of our proposed Identity Consistency Transformer." %}
+{% include image.html url="blog/images/paper/ict.png" description="Illustrating the (a) training phase and (b) testing phase of our proposed Identity Consistency Transformer." %}
 
 # 1. Purpose/Ouputs
 *Deepfake techniques have been largely advanced to be able to  create incredibly realistic fake images of which the face is replaced with someone else in another image. The malicious usage and spread of deepfake have raised serious societal concerns and posed an increasing threat to our trust in online media. Therefore, face forgery detection is in urgent need and has gained a considerable amount of attention recently.*
@@ -99,7 +99,7 @@ Notably, the overwhelming majority among all cases of face forgeries involve pol
 <br>
 
 # 5. Results
-{% include image.html url="/images/paper/ict_res.png" description="Deepfake detection AUC (%) on carefully crafted videos
+{% include image.html url="blog/images/paper/ict_res.png" description="Deepfake detection AUC (%) on carefully crafted videos
 collected from Internet." %}
 
 1. The proposed Identity Consistency Transformer (ICT) model outperforms existing deepfake detection methods on a dataset of deepfake videos of celebrities. The ICT model achieved an accuracy of **94.36% (Best is Face X-ray with 82.54%)** in detecting deepfake videos.
