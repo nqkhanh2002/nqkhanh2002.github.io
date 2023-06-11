@@ -658,6 +658,12 @@
 .bxl-google-plus:before {
   content: "\e92c";
 }
+
+/* .fa-brands:before {
+  content: "\e92b";
+} */
+
+
 .bxl-google-plus-circle:before {
   content: "\e92d";
 }
