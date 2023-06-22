@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Resume Section Classifier</title>
+  <title>Driver-assistance system</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -43,17 +43,26 @@
 
           <div class="col-lg-12 portfolio-info">
             <br>
-            <h2 style="color:#12d640">Resume Section Classifier</h2>
+            <h2 style="color:#12d640">Driver-assistance system (ADAS)</h2>
 
             <ul>
-              <li><strong>Tech Stack</strong>: Python, scikit-learn, numpy, pandas</li>
-              <li><strong>Github URL</strong>: <a href="https://github.com/rajaprerak/ResumeSectionClassifier" target="_blank">Project Link</a></li>
+              <li><strong>Tech Stack</strong>: Computer Vision, ONNX, YOLO, ULFD, Flask, Tenssort</li>
+              <li><strong>Github URL</strong>: <a href="https://github.com/nqkhanh2002/ADAS-LDWS-LKAS-FCWS" target="_blank">Project Link</a></li>
+              <li><strong>Video Demo</strong>: <a href="https://www.youtube.com/watch?v=j-Rbf1Wvl6M&list=PLlfxjRXHE-s3eR29Ah2lBhH0QqGxk97iM" target="_blank">Youtube</a></li>
             </ul>
 
             <p>
-              Given the Resume of a person, detect the section words such as experience, skills, projects, etc. Implemented different machine learning algorithms to get the desired output.            
+              Development of a lane & object detection and tracking solution for self-driving cars. This is an important part of the autopilot system, to ensure the safety and efficiency of the driver and passengers on the road.
             </p>
-          </div>
+            <p>Key Features of the Project:</p>
+            <p><strong>Lane Detection and Tracking:</strong> The project focuses on implementing a lane detection and tracking solution for self-driving cars. It utilizes computer vision techniques to identify and track the boundaries of driving lanes in real-time.</p>
+            <p><strong>Traditional Image Processing Methods:</strong> The project employs traditional image processing techniques as part of the lane detection pipeline. This includes camera calibration, distortion correction, perspective transformation, color transforms, lane pixel detection, lane boundary fitting, and curvature calculation.</p>
+            <p><strong>Deep Learning Methods:</strong> The project incorporates deep learning methods for lane detection. It utilizes Ultra Fast Lane Detection (UFLD) models with ResNet backbones for accurate and efficient lane detection. It also includes a vehicle detection component using YOLOv8 models.</p>
+            <p><strong>User Interface (GUI):</strong> The project provides a user interface in the form of a graphical user interface (GUI) application. The GUI allows users to interact with the lane detection system and provides a quick demo of its capabilities.</p>
+            <p><strong>Advanced Driver Assistance System (ADAS) Integration:</strong> The detected lane boundaries, curvature information, and vehicle position are overlaid on the original image, providing visual feedback for an ADAS. The system also includes features such as Lane Keeping Assist System (LKAS) with Vietnamese traffic signs and Lane Departure Warning System (LDWS).</p>
+            <p><strong>Flexibility in Model Types:</strong> The project supports different model types for lane detection, including UFLD with different backbones (ResNet18 and ResNet34) for both Tusimple and CULane datasets. It also supports multiple YOLOv5 and YOLOv8 models for object detection.</p>
+            <p><strong>Video Inference:</strong> The project offers video inference capabilities, allowing users to apply the lane detection and object detection models to video streams.</p>
+            </div>
 
         </div>
 
