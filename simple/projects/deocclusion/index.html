@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Self-Supervised Scene De-occlusion</title>
+
+<!-- Meta tags for search engines to crawl -->
+<meta name="robots" content="index,follow">
+<meta name="description" content="&gt;
+&lt;meta name=" keywords"="">
+<link rel="author" href="https://xiaohangzhan.github.io/">
+
+<!-- Fonts and stuff -->
+<link href="./deocclusion/css" rel="stylesheet" type="text/css">
+<link href="./deocclusion/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./deocclusion/project.css" media="screen">
+<link rel="stylesheet" type="text/css" media="screen" href="./deocclusion/iconize.css">
+<script type="text/javascript" async="" src="./deocclusion/ga.js"></script><script async="" src="./deocclusion/prettify.js"></script>
+
+<script type="text/javascript">
+            
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-22940424-1']);
+            _gaq.push(['_trackPageview']);
+            
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+            
+</script>
+
+<link type="text/css" rel="stylesheet" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content.css"></head>
+
+<body>
+  <div id="content">
+    <div id="content-inner">
+	&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://xiaohangzhan.github.io">Home</a>
+      <div class="section head">
+	<h1>Self-Supervised Scene De-occlusion</h1>
+
+	<div class="authors">
+	  <a href="https://xiaohangzhan.github.io/">Xiaohang Zhan<sup>1</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://xingangpan.github.io/">Xingang Pan<sup>1</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="http://daibo.info/">Bo Dai<sup>1</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://liuziwei7.github.io/">Ziwei Liu<sup>1</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://dahua.me/">Dahua Lin<sup>1</sup></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://personal.ie.cuhk.edu.hk/~ccloy/">Chen Change Loy<sup>2</sup></a>
+	</div>
+
+	<div class="affiliations">
+	  <a href="http://mmlab.ie.cuhk.edu.hk/"><sup>1</sup>CUHK - SenseTime Joint Lab, The Chinese University of Hong Kong</a><br>
+	  <sup>2</sup>Nanyang Technological University
+	</div>
+
+	<div class="venue">Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (<a href="http://cvpr2020.thecvf.com/" target="_blank">CVPR</a>) 2020<br>
+	<font color="red"><strong>(Oral Presentation)</strong></font><br />
+	</div>
+	
+      </div>
+
+      
+
+
+<div class="section demo">
+		
+		<br>
+		<center><iframe width="840" height="560"
+			src="https://www.youtube.com/embed/xIHCyyaB5gU?cc_load_policy=1">
+			</iframe></center>
+		<br>
+		<center>
+		<a href="https://www.bilibili.com/video/BV1JT4y157Wt">Alternatively watch in bilibili</a>
+		</center>
+	</div>
+
+
+<div class="section abstract">
+	<h2>Abstract</h2>
+	<br>
+	<p>
+Natural scene understanding is a challenging task, particularly when encountering images of multiple objects that are partially occluded. This obstacle is given rise by varying object ordering and positioning. Existing scene understanding paradigms are able to parse only the visible parts, resulting in incomplete and unstructured scene interpretation. In this paper, we investigate the problem of scene de-occlusion, which aims to recover the underlying occlusion ordering and complete the invisible parts of occluded objects. We make the first attempt to address the problem through a novel and unified framework that recovers hidden scene structures without ordering and amodal annotations as supervisions. This is achieved via Partial Completion Network (PCNet)-mask (M) and -content (C), that learn to recover fractions of object masks and contents, respectively, in a self-supervised manner. Based on PCNet-M and PCNet-C, we devise a novel inference scheme to accomplish scene de-occlusion, via progressive ordering recovery, amodal completion and content completion. Extensive experiments on real-world scenes demonstrate the superior performance of our approach to other alternatives. Remarkably, our approach that is trained in a self-supervised manner achieves comparable results to fully-supervised methods. The proposed scene de-occlusion framework benefits many applications, including high-quality and controllable image manipulation and scene recomposition (see Fig. 1), as well as the conversion of existing modal mask annotations to amodal mask annotations.
+
+	</p>
+      </div>
+      
+<div class="section materials">
+	<h2>Materials</h2>
+	<center>
+	  <ul>
+           
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://arxiv.org/abs/2004.02788" target="_blank" class="imageLink"><img src="./deocclusion/paper.png"></a><br>
+		  <a href="https://arxiv.org/abs/2004.02788" target="_blank">Paper</a>
+		</div>
+	      </li>
+	  
+	    </ul>
+	    </center>
+	    </div>
+	    
+<br>
+
+<div class="section code">
+	<h2>Code and Models</h2>
+	<center>
+	  <ul>
+           
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://github.com/XiaohangZhan/deocclusion/" target="_blank" class="imageLink"><img src="./deocclusion/code.png"></a><br>
+		  <a href="https://github.com/XiaohangZhan/deocclusion/" target="_blank">Code and Models</a>
+		</div>
+	      </li>
+
+	    </ul>
+	    </center>
+	    </div>
+	    
+<br>
+
+
+
+<div class="section citation">
+	<h2>Citation</h2>
+	<div class="section bibtex">
+	  <pre>@inproceedings{zhan2020self,
+ author = {Zhan, Xiaohang and Pan, Xingang and Dai, Bo and Liu, Ziwei and Lin, Dahua and Loy, Chen Change},
+ title = {Self-Supervised Scene De-occlusion},
+ booktitle = {Proceedings of the IEEE conference on computer vision and pattern recognition (CVPR)},
+ month = {June},
+ year = {2020}
+}</pre>
+	  </div>
+      </div>
+
+</div></div></body></html>
