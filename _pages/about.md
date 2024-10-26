@@ -8,7 +8,8 @@ redirect_from:
 ---
 
 Nguyen Quoc Khanh is currently working as a Data Scientist at ThinkPrompt and an AI Engineer intern at VinBigData, VinGroup. He received his B.E. degree from University of Information Technology - UIT in 2024. Before that, he joined ThinkPrompt (2023) and VinBigData (2024).
-About his research preference: He is interested in curiosity-driven research on unsolved problems. He is keen on taking challenges of new problems as long as they are valuable in research or business.
+
+**About his research preference:** He is interested in curiosity-driven research on unsolved problems. He is keen on taking challenges of new problems as long as they are valuable in research or business.
 <!-- I am open for a new position! Please contact me via email. -->
 
 My work and research
