@@ -8,8 +8,8 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Nguyen Quoc Khanh | Kane"
-title_separator          : "-"
+title                    : "Nguyen Quoc Khanh"
+title_separator          : "|"
 name                     : &name "Nguyen Quoc Khanh"
 description              : &description "personal description"
 url                      : "https://nqkhanh2002.github.io"

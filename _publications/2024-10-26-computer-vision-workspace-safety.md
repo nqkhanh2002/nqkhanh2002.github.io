@@ -2,7 +2,7 @@
 title: "Computer Vision for Safety Management
 A Case Study in the Construction Industry"
 collection: publications
-category: manuscripts
+category: whitepaper
 permalink: /publication/2024-10-26-computer-vision-for-workspace-safety
 excerpt: ''
 date: 2024-10-26
@@ -53,4 +53,4 @@ presents a comprehensive overview of the construction industry’s
 pursuit of leveraging CV technology to elevate safety management
 practices, serving as both an informative and instructive resource.
 
-For Vietnamese readers, a Vietnamese version is available at [this link](http://nqkhanh2002.github.io/files/cv_workspace_safety_slide_vie.pdf).
+For Vietnamese readers, a Vietnamese version is available at [this link](http://nqkhanh2002.github.io/files/cv_workspace_safety_vie.pdf).

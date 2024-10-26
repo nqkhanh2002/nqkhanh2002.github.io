@@ -1,13 +1,14 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+<!-- {% include base_path %} -->
+You can view my summary Resume [here](http://nqkhanh2002.github.io/files/NguyenQuocKhanh_Resume.pdf).
 
 Education
 ======

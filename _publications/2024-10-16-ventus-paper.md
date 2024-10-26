@@ -2,7 +2,7 @@
 title: "Optimizing Horse Racing Predictions through
 Ensemble Learning and Automated Betting Systems"
 collection: publications
-category: manuscripts
+category: whitepaper
 permalink: /publication/2024-10-16-ventus-paper
 excerpt: ''
 date: 2024-10-16
