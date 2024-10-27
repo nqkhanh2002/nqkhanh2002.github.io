@@ -8,6 +8,10 @@ main:
   - title: "Curriculum Vitae"
     url: /cv/
 
+  - title: "Publications"
+    url: /publications/
+
+
 
 
   # - title: "Talks"
@@ -19,10 +23,11 @@ main:
   - title: "Portfolio"
     url: /portfolio/
 
-  - title: "Publications"
-    url: /publications/
+
+
   - title: "Certificates"   
     url: /portfolio/   
+
   - title: "Blog Posts"
     url: /year-archive/
     

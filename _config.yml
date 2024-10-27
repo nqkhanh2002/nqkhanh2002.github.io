@@ -77,7 +77,7 @@ author:
 publication_category:
   books:
     title: 'Books'
-  manuscripts:
+  whitepaper:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
