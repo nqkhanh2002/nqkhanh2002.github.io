@@ -43,22 +43,8 @@ Skills
 * **Languages:** C/C++, Java, JavaScript, C#, Python, R
 * **Technologies:** Flask, ASP.NET, PyTorch, TensorFlow, Hugging Face, OpenAI
 * **Concepts:** Generative AI, Large Language Models, Machine Learning, Neural Networks, API Development, Cloud Computing, Agile Methodology
-
-Certifications
-======
-* TensorFlow Developer Professional Certificate (2023)
-* Generative Adversarial Networks (GANs) Specialization (2024)
-* Data Science Professional Certificate, IBM (2023)
-* AI Engineering Professional Certificate, IBM (2023)
-* Machine Learning Professional Certificate, IBM (2023)
-* Project Management Professional Certificate, Google (2023)
-* IT Automation with Python Professional Certificate, Google (2023)
-
-Additional Skills
-======
 * **TOEIC:** Reading & Listening: 750/990, Speaking & Writing: 270/400
 * **Typing Speed:** 100 WPM
-
 
 Publications
 ======

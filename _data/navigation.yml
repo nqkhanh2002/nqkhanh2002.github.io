@@ -23,10 +23,11 @@ main:
   - title: "Portfolio"
     url: /portfolio/
 
-
-
   - title: "Certificates"   
-    url: /portfolio/   
+    url: /certificate/  
+
+  - title: "Teaching"
+    url: /teaching/ 
 
   - title: "Blog Posts"
     url: /year-archive/
