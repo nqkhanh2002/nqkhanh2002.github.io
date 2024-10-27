@@ -12,35 +12,53 @@ You can view my summary Resume [here](http://nqkhanh2002.github.io/files/NguyenQ
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **University of Information Technology - VNUHCM (2020 - 2024)**  
+  - Bachelor of Science in Information System, GPA: 3.2/4.0
+  - Awards: Merit scholarships for two semesters and a full-tuition scholarship for exceptional performance.
 
-Work experience
+* **Nguyen Du High School for Gifted Students (2017 - 2020)**  
+  - Major in Physics, GPA: 3.5/4.0
+  - Awards: Gold/Silver Medal in Physics Olympic 10-3 (2017, 2018)
+
+Work Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Vingroup AI Engineer Training Program - VinBigData (July 2024 – May 2025)**  
+  - Role: AI Engineer
+  - Comprehensive training in AI and data science, with hands-on experience in large-scale projects.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **THINKPROMPT CO., LTD (July 2023 – Present)**  
+  - Role: Junior Data Scientist
+  - Developed machine learning models for NLP and computer vision; collaborated with cross-functional teams.
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* **MAICO Group (May 2022 – August 2022)**  
+  - Role: AI Engineer Intern
+  - Focused on developing and enhancing recommendation systems.
+
+* **Vietnam Olympiad in Informatics (VNOI) (July 2020 – Dec 2022)**  
+  - Role: Algorithmic Problem Setter
+  - Designed and tested algorithmic problems for competitive programming competitions.
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Languages:** C/C++, Java, JavaScript, C#, Python, R
+* **Technologies:** Flask, ASP.NET, PyTorch, TensorFlow, Hugging Face, OpenAI
+* **Concepts:** Generative AI, Large Language Models, Machine Learning, Neural Networks, API Development, Cloud Computing, Agile Methodology
+
+Certifications
+======
+* TensorFlow Developer Professional Certificate (2023)
+* Generative Adversarial Networks (GANs) Specialization (2024)
+* Data Science Professional Certificate, IBM (2023)
+* AI Engineering Professional Certificate, IBM (2023)
+* Machine Learning Professional Certificate, IBM (2023)
+* Project Management Professional Certificate, Google (2023)
+* IT Automation with Python Professional Certificate, Google (2023)
+
+Additional Skills
+======
+* **TOEIC:** Reading & Listening: 750/990, Speaking & Writing: 270/400
+* **Typing Speed:** 100 WPM
+
 
 Publications
 ======
@@ -48,18 +66,20 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+<!-- Talks
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
-  
+   -->
+
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+
+<!-- Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
