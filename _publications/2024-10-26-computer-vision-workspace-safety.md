@@ -55,4 +55,17 @@ practices, serving as both an informative and instructive resource.
 
 For Vietnamese readers, a Vietnamese version is available at [this link](http://nqkhanh2002.github.io/files/cv_workspace_safety_vie.pdf).
 
-<embed src="../files/cv_workspace_safety.pdf" type="application/pdf" width="750" height="400" />
+<!-- <embed src="../files/cv_workspace_safety.pdf" type="application/pdf" width="750" height="400" /> -->
+
+
+<style>
+    .responsive-embed {
+        width: 100%;
+        height: 500px;
+        max-width: 1000px; /* bạn có thể chỉnh sửa cho phù hợp */
+    }
+</style>
+
+<div class="pdf-container" style="display: flex; justify-content: center; align-items: center;">
+    <embed src="../files/cv_workspace_safety.pdf" type="application/pdf" class="responsive-embed" />
+</div>

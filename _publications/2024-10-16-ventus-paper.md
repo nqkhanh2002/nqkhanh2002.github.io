@@ -32,4 +32,17 @@ gressor, and TabNetRegressor – was employed to predict the victor of each
 race. This research can be valuable to stakeholders and researchers alike,
 offering insights for further analysis and experimentation in this field.
 
-<embed src="../files/ventus_paper.pdf" type="application/pdf" width="750" height="400" />
+<!-- <embed src="../files/ventus_paper.pdf" type="application/pdf" width="750" height="400" /> -->
+
+<style>
+    .responsive-embed {
+        width: 100%;
+        height: 500px;
+        max-width: 1000px; /* bạn có thể chỉnh sửa cho phù hợp */
+    }
+</style>
+
+<div class="pdf-container" style="display: flex; justify-content: center; align-items: center;">
+    <embed src="../files/ventus_paper.pdf" type="application/pdf" class="responsive-embed" />
+</div>
+
