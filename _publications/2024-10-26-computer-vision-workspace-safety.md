@@ -54,3 +54,5 @@ pursuit of leveraging CV technology to elevate safety management
 practices, serving as both an informative and instructive resource.
 
 For Vietnamese readers, a Vietnamese version is available at [this link](http://nqkhanh2002.github.io/files/cv_workspace_safety_vie.pdf).
+
+<embed src="../files/cv_workspace_safety.pdf" type="application/pdf" width="750" height="400" />

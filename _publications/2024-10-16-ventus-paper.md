@@ -31,3 +31,5 @@ XGBoost, CatBoostRegressor, HistGradientBoostingRegressor, AdaBoostRe-
 gressor, and TabNetRegressor – was employed to predict the victor of each
 race. This research can be valuable to stakeholders and researchers alike,
 offering insights for further analysis and experimentation in this field.
+
+<embed src="../files/ventus_paper.pdf" type="application/pdf" width="750" height="400" />
