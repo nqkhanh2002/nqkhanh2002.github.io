@@ -182,6 +182,15 @@
 .ai-google-scholar-square:before {
   content: "\e9f9";
 }
+
+.ai-researchgate:before {
+  content: "\e9d4";
+}
+.ai-researchgate-square:before {
+  content: "\e9f9";
+}
+
+
 .ai-hal:before {
   content: "\e92c";
 }
