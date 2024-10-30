@@ -3,7 +3,7 @@ title: "Python Tutor"
 collection: teaching
 type: "Undergraduate remote course/Personal Tutor"
 permalink: /teaching/2023-python-tutor
-venue: "Fordham, University"
+venue: "Fordham University"
 date: 2023-01-01
 location: "New York, USA"
 ---
