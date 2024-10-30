@@ -7,8 +7,8 @@ permalink: /publication/2024-10-16-ventus-paper
 excerpt: ''
 date: 2024-10-16
 venue: 'White paper'
-slidesurl: 'http://nqkhanh2002.github.io/files/ventus_paper.pdf'
-paperurl: 'http://nqkhanh2002.github.io/files/ventus_paper.pdf'
+slidesurl: 'https://www.researchgate.net/publication/385301910_Optimizing_Horse_Racing_Predictions_through_Ensemble_Learning_and_Automated_Betting_Systems'
+paperurl: 'https://www.researchgate.net/publication/385301910_Optimizing_Horse_Racing_Predictions_through_Ensemble_Learning_and_Automated_Betting_Systems'
 citation: 'Nguyen Quoc Khanh (2024), Optimizing Horse Racing Predictions through
 Ensemble Learning and Automated Betting Systems'
 ---
@@ -42,7 +42,7 @@ offering insights for further analysis and experimentation in this field.
     }
 </style>
 
-<div class="pdf-container" style="display: flex; justify-content: center; align-items: center;">
+<!-- <div class="pdf-container" style="display: flex; justify-content: center; align-items: center;">
     <embed src="../files/ventus_paper.pdf" type="application/pdf" class="responsive-embed" />
-</div>
+</div> -->
 

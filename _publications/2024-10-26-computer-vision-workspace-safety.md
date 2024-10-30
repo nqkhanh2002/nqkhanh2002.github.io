@@ -7,8 +7,8 @@ permalink: /publication/2024-10-26-computer-vision-for-workspace-safety
 excerpt: ''
 date: 2024-10-26
 venue: 'White Paper'
-slidesurl: 'http://nqkhanh2002.github.io/files/cv_workspace_safety_slide.pdf'
-paperurl: 'http://nqkhanh2002.github.io/files/cv_workspace_safety.pdf'
+slidesurl: 'https://www.researchgate.net/publication/385300485_Computer_Vision_for_Safety_Management_A_Case_Study_in_the_Construction_Industry?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ'
+paperurl: 'https://www.researchgate.net/publication/385300485_Computer_Vision_for_Safety_Management_A_Case_Study_in_the_Construction_Industry?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ'
 citation: 'Nguyen Quoc Khanh (2024), Computer Vision for Safety Management
 A Case Study in the Construction Industry'
 ---
@@ -66,6 +66,6 @@ For Vietnamese readers, a Vietnamese version is available at [this link](http://
     }
 </style>
 
-<div class="pdf-container" style="display: flex; justify-content: center; align-items: center;">
+<!-- <div class="pdf-container" style="display: flex; justify-content: center; align-items: center;">
     <embed src="../files/cv_workspace_safety.pdf" type="application/pdf" class="responsive-embed" />
-</div>
+</div> -->

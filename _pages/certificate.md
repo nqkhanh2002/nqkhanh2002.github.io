@@ -23,6 +23,6 @@ redirect_from:
     }
 </style>
 
-<div class="pdf-container" style="display: flex; justify-content: center; align-items: center;">
+<!-- <div class="pdf-container" style="display: flex; justify-content: center; align-items: center;">
     <embed src="../files/machinelearning_cert.pdf" type="application/pdf" class="responsive-embed" />
-</div>
+</div> -->
