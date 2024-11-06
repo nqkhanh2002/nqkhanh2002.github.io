@@ -7,9 +7,9 @@ permalink: /publication/2024-10-16-ventus-paper
 excerpt: ''
 date: 2024-10-16
 venue: 'White paper'
-slidesurl: 'https://www.researchgate.net/publication/385301910_Optimizing_Horse_Racing_Predictions_through_Ensemble_Learning_and_Automated_Betting_Systems'
-paperurl: 'https://www.researchgate.net/publication/385301910_Optimizing_Horse_Racing_Predictions_through_Ensemble_Learning_and_Automated_Betting_Systems'
-citation: 'Nguyen Quoc Khanh (2024), Optimizing Horse Racing Predictions through
+slidesurl: 'http://dx.doi.org/10.13140/RG.2.2.23233.16484'
+paperurl: 'http://dx.doi.org/10.13140/RG.2.2.23233.16484'
+citation: 'Nguyen Quoc Khanh, Nguyen Phuoc Sang, Tran Vu Anh, Tran Thi My Quyen (2024), Optimizing Horse Racing Predictions through
 Ensemble Learning and Automated Betting Systems'
 ---
 

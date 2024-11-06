@@ -7,8 +7,8 @@ permalink: /publication/2024-10-26-computer-vision-for-workspace-safety
 excerpt: ''
 date: 2024-10-26
 venue: 'White Paper'
-slidesurl: 'https://www.researchgate.net/publication/385300485_Computer_Vision_for_Safety_Management_A_Case_Study_in_the_Construction_Industry?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ'
-paperurl: 'https://www.researchgate.net/publication/385300485_Computer_Vision_for_Safety_Management_A_Case_Study_in_the_Construction_Industry?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ'
+slidesurl: 'http://dx.doi.org/10.13140/RG.2.2.36654.93767'
+paperurl: 'http://dx.doi.org/10.13140/RG.2.2.36654.93767'
 citation: 'Nguyen Quoc Khanh (2024), Computer Vision for Safety Management
 A Case Study in the Construction Industry'
 ---
