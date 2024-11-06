@@ -19,7 +19,7 @@ Work and research
 -----------
 His work centers on applying advanced artificial intelligence and data science techniques to address real-world problems in areas like machine learning, deep learning, computer vision, and natural language processing. With a strong academic background in Information Systems from the University of Information Technology, VNUHCM, he has gained extensive practical experience through various projects and industry roles, earning multiple awards for outstanding performance.
 
-Currently, he is part of the Vingroup AI Engineer Training Program, where he is focusing on AI ethics, MLOps, and advanced machine learning systems. In parallel, he works as a Junior Data Scientist at ThinkPrompt CO., LTD, where he takes a leading role in developing and deploying machine learning models, ensuring seamless integration and scalability.
+Currently, he is part of the Vingroup AI Engineer Training Program, where he is focusing on AI ethics, MLOps, and advanced machine learning systems. In parallel, he works as a Junior Data Scientist (Team Leader) at ThinkPrompt CO., LTD, where he takes a leading role in developing and deploying machine learning models, ensuring seamless integration and scalability.
 
 From building predictive models for horse racing betting systems to creating real-time sign language translation solutions using cutting-edge technologies, his work is driven by a passion for practical applications. He has also developed advanced driver assistance systems (ADAS) to enhance vehicle safety through sophisticated computer vision techniques.
 
