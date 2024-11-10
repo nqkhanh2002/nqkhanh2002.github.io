@@ -17,7 +17,7 @@ Education
   - Awards: Merit scholarships for two semesters and a full-tuition scholarship for exceptional performance.
 
 <!-- * **Nguyen Du High School for Gifted Students (2017 - 2020)**   -->
-* **Tay Nguyen Ethnic Minority Boarding Schoo (2017 - 2020)**  
+* **Tay Nguyen Ethnic Minority Boarding School (2017 - 2020)**  
   - Major in Physics, GPA: 3.5/4.0
   - Awards: Gold/Silver Medal in Physics Olympic 10-3 (2017, 2018)
 
