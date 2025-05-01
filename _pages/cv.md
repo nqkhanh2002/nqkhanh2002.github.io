@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <!-- {% include base_path %} -->
-You can view my summary Resume [here](http://nqkhanh2002.github.io/files/NguyenQuocKhanh_Resume.pdf).
+You can view my summary Resume [here](http://nqkhanh2002.github.io/files/NguyenQuocKhanh_CV.pdf).
 
 Education
 ======
