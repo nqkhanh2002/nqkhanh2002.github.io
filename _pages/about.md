@@ -10,22 +10,22 @@ redirect_from:
 About
 -----------
 
-Nguyen Quoc Khanh is an experienced Applied Data Scientist/AI Engineer in machine learning, MLOps, and data engineering, currently pursuing a Master's in Computer Science with aspirations for PhD research in artificial intelligence.
+Nguyen Quoc Khanh is an AI Scientist at Silver Tiger, specializing in multi-agent systems, LLM applications, and deep learning. He plans to pursue a Master's in Computer Science in Fall 2027, with aspirations for PhD research in artificial intelligence.
 
-He is currently working as a Data Scientist at ThinkPrompt and recently completed the Vingroup AI Engineer Training Program at VinBigData. He received his B.E. degree from the University of Information Technology - UIT in 2024. He joined ThinkPrompt in 2023 and completed his training at VinBigData in 2024. Currently, he is also pursuing a Master of Science in Computer Science at the University of Information Technology - VNUHCM, starting from May 2025.
+He received his B.E. degree from the University of Information Technology - UIT in 2024. Prior to his current role, he worked as an AI Engineer at VinBigData's Speech Processing Department, focusing on ASR/TTS systems and MLOps. He also completed the prestigious Vingroup AI Engineer Training Program and served as a Data Scientist at ThinkPrompt, where he led a team building predictive ML models for horse racing analytics.
 
 **About his research preference:** He is interested in curiosity-driven research on unsolved problems. He is keen on taking challenges of new problems as long as they are valuable in research or business.
 <!-- I am open for a new position! Please contact me via email. -->
 
-Work and research
+Work and Research
 -----------
-His work centers on applying advanced artificial intelligence and data science techniques to address real-world problems in areas like machine learning, deep learning, computer vision, and natural language processing. With a strong academic background in Information Systems from the University of Information Technology, VNUHCM, he has gained extensive practical experience through various projects and industry roles, earning multiple awards for outstanding performance.
+His current work at Silver Tiger focuses on designing and implementing multi-agent orchestration logic for GenAI use cases including chatbots, AI assistants, and Intelligent Document Processing (IDP) systems. He also develops deep learning models for phishing webpage detection, leveraging technologies like LangChain, LangGraph, and AWS.
 
-He recently completed the Vingroup AI Engineer Training Program, where he focused on AI ethics, MLOps, and advanced machine learning systems. Currently, he works as a Data Scientist (Team Leader) at ThinkPrompt CO., LTD, where he takes a leading role in developing and deploying machine learning models, ensuring seamless integration and scalability.
+Previously at VinBigData, he contributed to the SpeechWorld Data Framework, developing data crawling, labeling, and Transcript Forced Alignment (TFA) workflows. He enhanced Grapheme-to-Phoneme (G2P) models and improved the SpeechBase system with model tuning, backend improvements, and online/active learning capabilities.
 
-From building predictive models for horse racing betting systems to creating real-time sign language translation solutions using cutting-edge technologies, his work is driven by a passion for practical applications. He has also developed advanced driver assistance systems (ADAS) to enhance vehicle safety through sophisticated computer vision techniques.
+At ThinkPrompt, he worked with a team of 3+ AI Engineers, designing and deploying 20+ predictive ML models that achieved 20% WIN rate and 50% PLACE rate, resulting in 150% net ROI. He implemented comprehensive MLOps workflows and architected end-to-end ML infrastructure using AWS EC2, Docker, FastAPI, and PostgreSQL.
 
-Through his collaborative efforts with cross-functional teams and the use of tools like TensorFlow, AWS, and FastAPI, he strives to deliver AI-driven solutions that make a tangible impact. Explore his projects to learn more about how he is contributing to the future of AI and data science.
+His earlier experience includes developing recommendation systems at MAICO Group and designing algorithmic problems for the Vietnam Olympiad in Informatics (VNOI). Through his work with tools like TensorFlow, LangChain, AWS, and FastAPI, he strives to deliver AI-driven solutions that make a tangible impact.
 
 Visitor Map
 -----------
