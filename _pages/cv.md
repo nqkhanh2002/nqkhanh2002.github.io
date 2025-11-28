@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <!-- {% include base_path %} -->
-You can view my summary Resume [here](http://nqkhanh2002.github.io/files/NguyenQuocKhanh_CV.pdf).
+<!-- You can view my summary Resume [here](http://nqkhanh2002.github.io/files/NguyenQuocKhanh_CV.pdf). -->
 
 Education
 ======
@@ -16,7 +16,7 @@ Education
   - Bachelor of Science in Information System, GPA: 3.2/4.0
   - Awards: Merit scholarships for two semesters and a full-tuition scholarship for exceptional performance.
 
-<!-- * **Nguyen Du High School for Gifted Students (2017 - 2020)**   -->
+* **Nguyen Du High School for Gifted Students (2017 - 2020)**  
 * **Tay Nguyen Ethnic Minority Boarding School (2017 - 2020)**  
   - Major in Physics, GPA: 3.5/4.0
   - Awards: Gold/Silver Medal in Physics Olympic 10-3 (2017, 2018)
