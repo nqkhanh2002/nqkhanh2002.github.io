@@ -8,7 +8,8 @@ redirect_from:
 ---
 
 <!-- {% include base_path %} -->
-<!-- You can view my summary Resume [here](http://nqkhanh2002.github.io/files/NguyenQuocKhanh_CV.pdf). -->
+
+<a href="/files/NguyenQuocKhanh_CV.pdf" class="btn btn--success" style="font-size: 0.9em; text-decoration: none;"><i class="fas fa-file-pdf"></i> Download My CV</a>
 
 Education
 ======
